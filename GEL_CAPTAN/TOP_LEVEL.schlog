@@ -1,0 +1,6 @@
+select figure at 4530 1406 8 -branches -sn=3
+select all in 4530 1406 5028 1490 -branches -enclosed -sn=3
+select figure at 5430 2605 8 -branches -sn=3
+select figure at 4617 1746 8 -branches -sn=3
+select figure at 4014 506 8 -branches -sn=3
+select figure at 3763 1012 8 -branches -sn=3
