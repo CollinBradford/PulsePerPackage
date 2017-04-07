@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 04/07/2017 11:15:13
+-- /___/   /\     Timestamp : 04/07/2017 13:13:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -699,9 +699,9 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal psudo_data_all_one_val_in : std_logic_vector (7 downto 0);
    signal psudo_data_attr           : std_logic_vector (63 downto 0);
    signal psudo_data_attr_map       : std_logic;
+   signal psudo_data_samples        : std_logic_vector (15 downto 0);
    signal psudo_data_sawtooth       : std_logic_vector (63 downto 0);
    signal psudo_data_select_map     : std_logic;
-   signal psudo_delay               : std_logic_vector (7 downto 0);
    signal pulse                     : std_logic;
    signal pusdo_data_select         : std_logic_vector (2 downto 0);
    signal read_size                 : std_logic_vector (15 downto 0);
@@ -1075,13 +1075,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
              delay_time : in    std_logic_vector (7 downto 0));
    end component;
    
-   component psudoData
-      port ( clk      : in    std_logic; 
-             reset    : in    std_logic; 
-             delay    : in    std_logic_vector (7 downto 0); 
-             data_out : out   std_logic_vector (15 downto 0));
-   end component;
-   
    component psudo_data_allOne
       port ( value_in  : in    std_logic_vector (7 downto 0); 
              value_out : out   std_logic_vector (63 downto 0));
@@ -1128,6 +1121,13 @@ architecture BEHAVIORAL of TOP_LEVEL is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component PsudoCounter
+      port ( clk       : in    std_logic; 
+             reset     : in    std_logic; 
+             SampleOne : out   std_logic_vector (7 downto 0); 
+             SampleTwo : out   std_logic_vector (7 downto 0));
+   end component;
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
@@ -1934,12 +1934,6 @@ begin
       port map (I=>ethernet_overflow,
                 O=>open);
    
-   XLXI_6292 : psudoData
-      port map (clk=>FADC_DCLK,
-                delay(7 downto 0)=>psudo_delay(7 downto 0),
-                reset=>reset,
-                data_out(15 downto 0)=>psudo_data_sawtooth(15 downto 0));
-   
    XLXI_6294 : psudo_data_allOne
       port map (value_in(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0),
                 value_out(63 downto 0)=>psudo_data_aio(63 downto 0));
@@ -2025,7 +2019,7 @@ begin
                 O=>open);
    
    XLXI_6341 : ADC_FIFO
-      port map (din(15 downto 0)=>psudo_data_sawtooth(15 downto 0),
+      port map (din(15 downto 0)=>psudo_data_samples(15 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>XLXN_15529,
                 wr_clk=>FADC_DCLK,
@@ -2059,6 +2053,12 @@ begin
    
    XLXI_6351 : GND
       port map (G=>XLXN_15547);
+   
+   XLXI_6354 : PsudoCounter
+      port map (clk=>FADC_DCLK,
+                reset=>reset,
+                SampleOne(7 downto 0)=>psudo_data_samples(7 downto 0),
+                SampleTwo(7 downto 0)=>psudo_data_samples(15 downto 8));
    
 end BEHAVIORAL;
 
