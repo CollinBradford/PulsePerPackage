@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 04/07/2017 14:01:18
+-- /___/   /\     Timestamp : 04/07/2017 14:23:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -760,6 +760,10 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15551                : std_logic_vector (7 downto 0);
    signal XLXN_15552                : std_logic_vector (7 downto 0);
    signal XLXN_15553                : std_logic_vector (7 downto 0);
+   signal XLXN_15554                : std_logic_vector (7 downto 0);
+   signal XLXN_15555                : std_logic_vector (7 downto 0);
+   signal XLXN_15556                : std_logic_vector (7 downto 0);
+   signal XLXN_15557                : std_logic_vector (7 downto 0);
    signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
@@ -2068,12 +2072,12 @@ begin
                 reset=>reset,
                 SampleEight(7 downto 0)=>XLXN_15553(7 downto 0),
                 SampleFive(7 downto 0)=>XLXN_15550(7 downto 0),
-                SampleFour=>open,
-                SampleOne=>open,
+                SampleFour(7 downto 0)=>XLXN_15557(7 downto 0),
+                SampleOne(7 downto 0)=>XLXN_15554(7 downto 0),
                 SampleSeven(7 downto 0)=>XLXN_15552(7 downto 0),
                 SampleSix(7 downto 0)=>XLXN_15551(7 downto 0),
-                SampleThree=>open,
-                SampleTwo=>open);
+                SampleThree(7 downto 0)=>XLXN_15556(7 downto 0),
+                SampleTwo(7 downto 0)=>XLXN_15555(7 downto 0));
    
 end BEHAVIORAL;
 

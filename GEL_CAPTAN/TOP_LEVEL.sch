@@ -287,6 +287,10 @@
         <signal name="XLXN_15551(7:0)" />
         <signal name="XLXN_15552(7:0)" />
         <signal name="XLXN_15553(7:0)" />
+        <signal name="XLXN_15554(7:0)" />
+        <signal name="XLXN_15555(7:0)" />
+        <signal name="XLXN_15556(7:0)" />
+        <signal name="XLXN_15557(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -1918,10 +1922,10 @@
         <block symbolname="PsudoCounter" name="XLXI_6354">
             <blockpin signalname="FADC_DCLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin name="SampleOne(7:0)" />
-            <blockpin name="SampleTwo(7:0)" />
-            <blockpin name="SampleThree(7:0)" />
-            <blockpin name="SampleFour(7:0)" />
+            <blockpin signalname="XLXN_15554(7:0)" name="SampleOne(7:0)" />
+            <blockpin signalname="XLXN_15555(7:0)" name="SampleTwo(7:0)" />
+            <blockpin signalname="XLXN_15556(7:0)" name="SampleThree(7:0)" />
+            <blockpin signalname="XLXN_15557(7:0)" name="SampleFour(7:0)" />
             <blockpin signalname="XLXN_15550(7:0)" name="SampleFive(7:0)" />
             <blockpin signalname="XLXN_15551(7:0)" name="SampleSix(7:0)" />
             <blockpin signalname="XLXN_15552(7:0)" name="SampleSeven(7:0)" />
@@ -2740,6 +2744,18 @@
         </branch>
         <branch name="XLXN_15553(7:0)">
             <wire x2="1888" y1="1648" y2="1648" x1="1872" />
+        </branch>
+        <branch name="XLXN_15554(7:0)">
+            <wire x2="1888" y1="1200" y2="1200" x1="1872" />
+        </branch>
+        <branch name="XLXN_15555(7:0)">
+            <wire x2="1888" y1="1264" y2="1264" x1="1872" />
+        </branch>
+        <branch name="XLXN_15556(7:0)">
+            <wire x2="1888" y1="1328" y2="1328" x1="1872" />
+        </branch>
+        <branch name="XLXN_15557(7:0)">
+            <wire x2="1888" y1="1392" y2="1392" x1="1872" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">

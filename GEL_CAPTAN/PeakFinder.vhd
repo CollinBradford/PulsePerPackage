@@ -50,14 +50,14 @@ architecture Behavioral of PeakFinder is
 	signal new_trigger : std_logic;
 	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
 begin
-	sample_one <= unsigned(data_in(7 downto 0));
-	sample_two <= unsigned(data_in(15 downto 8));
-	sample_three <= unsigned(data_in(23 downto 16));
-	sample_four <= unsigned(data_in(31 downto 24));
-	sample_five <= unsigned(data_in(39 downto 32));
-	sample_six <= unsigned(data_in(47 downto 40));
-	sample_seven <= unsigned(data_in(55 downto 48));
-	sample_eight <= unsigned(data_in(63 downto 56));
+	sample_one <= unsigned(data_in(15 downto 8));
+	sample_two <= unsigned(data_in(7 downto 0));
+	sample_three <= unsigned(data_in(31 downto 24));
+	sample_four <= unsigned(data_in(23 downto 16));
+	sample_five <= unsigned(data_in(47 downto 40));
+	sample_six <= unsigned(data_in(39 downto 32));
+	sample_seven <= unsigned(data_in(63 downto 56));
+	sample_eight <= unsigned(data_in(55 downto 48));
 	
 	threshold <= unsigned(signal_threshold);
 	userSamplesSinceTrig <= unsigned(user_samples_after_trig);
