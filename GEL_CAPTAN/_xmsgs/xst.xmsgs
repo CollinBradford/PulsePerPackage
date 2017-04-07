@@ -387,6 +387,9 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">fadc_data_in&lt;31:16&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">fadc_data_in&lt;15:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">fadc_ctrl_data&lt;13:12&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
@@ -458,10 +461,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6231</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
-It will be removed from the design.
-</msg>
-
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6292</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
 It will be removed from the design.
 </msg>
 
@@ -609,10 +608,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6231</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
-It will be removed from the design.
-</msg>
-
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_6292</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">TOP_LEVEL</arg>&gt;.
 It will be removed from the design.
 </msg>
 

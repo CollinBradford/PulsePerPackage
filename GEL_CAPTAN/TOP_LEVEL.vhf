@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 03/31/2017 16:05:09
+-- /___/   /\     Timestamp : 04/07/2017 11:15:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2025,7 +2025,7 @@ begin
                 O=>open);
    
    XLXI_6341 : ADC_FIFO
-      port map (din(15 downto 0)=>fadc_data_in(15 downto 0),
+      port map (din(15 downto 0)=>psudo_data_sawtooth(15 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>XLXN_15529,
                 wr_clk=>FADC_DCLK,

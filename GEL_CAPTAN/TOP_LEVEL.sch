@@ -269,7 +269,6 @@
         <signal name="fadc_data_in(9)" />
         <signal name="fadc_data_in(10)" />
         <signal name="fadc_data_in(15)" />
-        <signal name="fadc_data_in(15:0)" />
         <signal name="clk_latch_signals(7:0)" />
         <signal name="XLXN_15518" />
         <signal name="EbufValid" />
@@ -1882,7 +1881,7 @@
         </block>
         <block symbolname="ADC_FIFO" name="XLXI_6341">
             <blockpin signalname="FADC_DCLK" name="wr_clk" />
-            <blockpin signalname="fadc_data_in(15:0)" name="din(15:0)" />
+            <blockpin signalname="psudo_data_sawtooth(15:0)" name="din(15:0)" />
             <blockpin signalname="XLXN_15533" name="wr_en" />
             <blockpin signalname="XLXN_15524" name="full" />
             <blockpin signalname="XLXN_15525" name="overflow" />
@@ -2627,7 +2626,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="832" type="branch" />
             <wire x2="2336" y1="832" y2="832" x1="2304" />
         </branch>
-        <branch name="fadc_data_in(15:0)">
+        <branch name="psudo_data_sawtooth(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="864" type="branch" />
             <wire x2="2336" y1="864" y2="864" x1="2304" />
         </branch>
