@@ -257,7 +257,7 @@
         <signal name="psudo_data_attr(63:48)" />
         <signal name="psudo_data_select_map" />
         <signal name="psudo_data_all_one_val_in(7:0)" />
-        <signal name="psudo_data_samples(15:0)" />
+        <signal name="fadc_data_in(15:0)" />
         <signal name="rx_data(1)" />
         <signal name="pusdo_data_select(1)" />
         <signal name="pusdo_data_select(0)" />
@@ -278,15 +278,15 @@
         <signal name="XLXN_15533" />
         <signal name="fadc_fifo_data_out(15:0)" />
         <signal name="ethernet_fifo_din(63:0)" />
-        <signal name="XLXN_15541" />
-        <signal name="XLXN_15542" />
         <signal name="XLXN_15547" />
         <signal name="newpeak_testpoint" />
         <signal name="new_peak" />
         <signal name="rx_data(2)" />
         <signal name="pusdo_data_select(2)" />
-        <signal name="psudo_data_samples(7:0)" />
-        <signal name="psudo_data_samples(15:8)" />
+        <signal name="XLXN_15550(7:0)" />
+        <signal name="XLXN_15551(7:0)" />
+        <signal name="XLXN_15552(7:0)" />
+        <signal name="XLXN_15553(7:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -777,14 +777,26 @@
             <line x2="48" y1="-48" y2="-48" x1="112" />
         </blockdef>
         <blockdef name="PsudoCounter">
-            <timestamp>2017-4-7T17:7:50</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
+            <timestamp>2017-4-7T18:53:49</timestamp>
+            <rect width="64" x="320" y="20" height="24" />
+            <line x2="384" y1="32" y2="32" x1="320" />
+            <rect width="64" x="320" y="84" height="24" />
+            <line x2="384" y1="96" y2="96" x1="320" />
+            <rect width="64" x="320" y="148" height="24" />
+            <line x2="384" y1="160" y2="160" x1="320" />
+            <rect width="64" x="320" y="212" height="24" />
+            <line x2="384" y1="224" y2="224" x1="320" />
+            <rect width="64" x="320" y="276" height="24" />
+            <line x2="384" y1="288" y2="288" x1="320" />
+            <rect width="64" x="320" y="340" height="24" />
+            <line x2="384" y1="352" y2="352" x1="320" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-128" height="512" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1869,7 +1881,7 @@
         </block>
         <block symbolname="ADC_FIFO" name="XLXI_6341">
             <blockpin signalname="FADC_DCLK" name="wr_clk" />
-            <blockpin signalname="psudo_data_samples(15:0)" name="din(15:0)" />
+            <blockpin signalname="fadc_data_in(15:0)" name="din(15:0)" />
             <blockpin signalname="XLXN_15533" name="wr_en" />
             <blockpin signalname="XLXN_15524" name="full" />
             <blockpin signalname="XLXN_15525" name="overflow" />
@@ -1906,8 +1918,14 @@
         <block symbolname="PsudoCounter" name="XLXI_6354">
             <blockpin signalname="FADC_DCLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="psudo_data_samples(7:0)" name="SampleOne(7:0)" />
-            <blockpin signalname="psudo_data_samples(15:8)" name="SampleTwo(7:0)" />
+            <blockpin name="SampleOne(7:0)" />
+            <blockpin name="SampleTwo(7:0)" />
+            <blockpin name="SampleThree(7:0)" />
+            <blockpin name="SampleFour(7:0)" />
+            <blockpin signalname="XLXN_15550(7:0)" name="SampleFive(7:0)" />
+            <blockpin signalname="XLXN_15551(7:0)" name="SampleSix(7:0)" />
+            <blockpin signalname="XLXN_15552(7:0)" name="SampleSeven(7:0)" />
+            <blockpin signalname="XLXN_15553(7:0)" name="SampleEight(7:0)" />
         </block>
         <block symbolname="fdre" name="XLXI_6323">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2587,7 +2605,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="832" type="branch" />
             <wire x2="2336" y1="832" y2="832" x1="2304" />
         </branch>
-        <branch name="psudo_data_samples(15:0)">
+        <branch name="fadc_data_in(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="864" type="branch" />
             <wire x2="2336" y1="864" y2="864" x1="2304" />
         </branch>
@@ -2703,14 +2721,6 @@
         </branch>
         <instance x="1488" y="1296" name="XLXI_6354" orien="R0">
         </instance>
-        <branch name="psudo_data_samples(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1888" y="1200" type="branch" />
-            <wire x2="1888" y1="1200" y2="1200" x1="1872" />
-        </branch>
-        <branch name="psudo_data_samples(15:8)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1888" y="1264" type="branch" />
-            <wire x2="1888" y1="1264" y2="1264" x1="1872" />
-        </branch>
         <branch name="FADC_DCLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1472" y="1200" type="branch" />
             <wire x2="1488" y1="1200" y2="1200" x1="1472" />
@@ -2718,6 +2728,18 @@
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1472" y="1264" type="branch" />
             <wire x2="1488" y1="1264" y2="1264" x1="1472" />
+        </branch>
+        <branch name="XLXN_15550(7:0)">
+            <wire x2="1888" y1="1456" y2="1456" x1="1872" />
+        </branch>
+        <branch name="XLXN_15551(7:0)">
+            <wire x2="1888" y1="1520" y2="1520" x1="1872" />
+        </branch>
+        <branch name="XLXN_15552(7:0)">
+            <wire x2="1888" y1="1584" y2="1584" x1="1872" />
+        </branch>
+        <branch name="XLXN_15553(7:0)">
+            <wire x2="1888" y1="1648" y2="1648" x1="1872" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
