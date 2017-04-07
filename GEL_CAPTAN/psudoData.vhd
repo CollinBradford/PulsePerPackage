@@ -43,12 +43,7 @@ begin
 		
 		if(reset = '0') then
 			if(rising_edge(clk)) then
-				if(delayCounter >= unsDelay) then
 					counter <= counter + 2;
-					delayCounter <= (others => '0');
-				else
-					delayCounter <= delayCounter + 1;
-				end if;
 			end if;
 			counter_two <= counter + 1;
 		else
