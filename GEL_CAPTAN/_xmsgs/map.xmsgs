@@ -20,100 +20,100 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_00DP_00S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_00DP_00S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_00DP_00S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_00DP_00S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_00DN_01S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_00DN_01S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_00DN_01S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_00DN_01S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_01DP_02S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_01DP_02S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_01DP_02S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_01DP_02S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_01DN_03S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_01DN_03S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_01DN_03S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_01DN_03S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_02DP_04S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_02DP_04S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_02DP_04S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_02DP_04S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_02DN_05S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_02DN_05S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_02DN_05S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_02DN_05S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_03DP_06S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_03DP_06S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_03DP_06S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_03DP_06S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_03DN_07S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_03DN_07S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_03DN_07S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_03DN_07S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_04DP_08S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_04DP_08S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_04DP_08S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_04DP_08S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_04DN_09S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_04DN_09S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_04DN_09S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_04DN_09S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_05DP_10S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_05DP_10S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_05DP_10S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_05DP_10S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_05DN_11S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_05DN_11S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_05DN_11S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_05DN_11S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_06DP_12S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_06DP_12S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_06DP_12S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_06DP_12S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_06DN_13S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_06DN_13S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_06DN_13S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_06DN_13S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_07DP_14S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_07DP_14S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_07DP_14S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_07DP_14S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_07DN_15S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_07DN_15S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_07DN_15S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_07DN_15S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_08DP_16S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_08DP_16S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_08DP_16S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_08DP_16S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_08DN_17S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_08DN_17S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_08DN_17S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_08DN_17S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_09DP_18S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_09DP_18S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_09DP_18S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_09DP_18S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_09DN_19S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_09DN_19S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_09DN_19S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_09DN_19S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_10DP_20S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_10DP_20S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_10DP_20S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_10DP_20S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_10DN_21S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_10DN_21S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_10DN_21S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_10DN_21S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_11DP_22S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_11DP_22S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_11DP_22S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_11DP_22S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_11DN_23S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_11DN_23S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_11DN_23S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_11DN_23S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_12DP_24S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_12DP_24S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_12DP_24S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_12DP_24S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_12DN_25S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_12DN_25S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_12DN_25S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_12DN_25S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_13DP_26S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_13DP_26S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_13DP_26S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_13DP_26S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_13DN_27S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_13DN_27S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_13DN_27S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_13DN_27S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_14DP_28S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_14DP_28S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_14DP_28S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_14DP_28S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_14DN_29S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_14DN_29S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_14DN_29S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_14DN_29S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_15DP_30S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_15DP_30S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_15DP_30S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_15DP_30S</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">BUSB_15DN_31S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_15DN_31S</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">BUSB_15DN_31S</arg> connected to top level port <arg fmt="%s" index="2">BUSB_15DN_31S</arg> has been removed.
 </msg>
 
 <msg type="info" file="MapLib" num="797" delta="old" >Your design is targeting <arg fmt="%s" index="1">LX/SX Production Step 0/1/ES</arg> devices. Please note that there are new specifications for the DCMs to guarantee maximum frequency performance. If the DCM input clock might stop or if the DCM reset might be asserted for an extended time, then use of the dcm_standby macro may be required. Please see Answer Record 21127.
