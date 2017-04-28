@@ -22,15 +22,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity data_send is
     Port ( rst : in  STD_LOGIC;
            clk : in  STD_LOGIC;
@@ -39,33 +30,56 @@ entity data_send is
            b_enable : in  STD_LOGIC;
            delay_time : in  STD_LOGIC_VECTOR(7 downto 0);
            b_data : out  STD_LOGIC_VECTOR (63 downto 0);
-           b_data_we : out  STD_LOGIC);
+           b_data_we : out  STD_LOGIC;
+			  b_force_packet : out STD_LOGIC);
 end data_send;
 
 architecture Behavioral of data_send is
 
 signal count_delay : unsigned(7 downto 0);
 signal delay_time_u : unsigned(7 downto 0);
+signal new_peak : std_logic;
+signal state_new_peak : std_logic;
+signal b_force_packet_sig : std_logic;
+signal b_data_we_sig : std_logic;
 
 begin
 
 	delay_time_u <= unsigned(delay_time);
+	new_peak <= din(64);
+	b_force_packet <= b_force_packet_sig;
+	b_data_we <= b_data_we_sig;
 	
-	process(clk, b_enable) 
-	begin
-		if(rst = '0') then
-			if(empty = '0') then
-				if(rising_edge(clk)) then
-					b_data_we <= '0';
-					
+	process(clk, b_enable) begin
+		if(rising_edge(clk)) then
+			if(rst = '0') then
+			
+				if(empty = '0' and new_peak = '0') then  --middle of normal read operation
+					state_new_peak <= '0';
+					b_data_we_sig <= '0';
 					count_delay <= count_delay + 1;
 					if(count_delay >= delay_time_u) then
 						count_delay <= (others => '0');
-						b_data_we <= '1';
+						b_data_we_sig <= '1';
 					end if;
 				end if;
+				
+				if(empty = '0' and state_new_peak = '0' and new_peak = '1') then --start of new_peak
+					b_force_packet_sig <= '1';
+					state_new_peak <= '1';
+				end if;
+				
+				if(empty = '0' and state_new_peak = '1' and new_peak = '1' and b_data_we_sig = '0') then --turn off new_peak signal and start read opperation to clear new_peak and state_new_peak
+					b_data_we_sig <= '1';
+					state_new_peak <= '0';
+				end if;
+				
+			else--reset code here
+				state_new_peak <= '1';
+				count_delay <= (others => '0');
+				b_force_packet_sig <= '0';
+				b_data_we_sig <= '0';
 			end if;
-		else--reset code here
 		end if;
 	end process;
 	

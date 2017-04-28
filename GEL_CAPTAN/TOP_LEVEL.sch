@@ -292,6 +292,7 @@
         <signal name="XLXN_15557(7:0)" />
         <signal name="ethernet_fifo_din(64:0)" />
         <signal name="ethernet_fifo_dout(64:0)" />
+        <signal name="b_force_packet" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -720,7 +721,8 @@
             <rect width="400" x="64" y="-320" height="640" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2017-4-28T19:56:26</timestamp>
+            <timestamp>2017-4-28T21:15:36</timestamp>
+            <line x2="384" y1="96" y2="96" x1="320" />
             <rect width="64" x="0" y="20" height="24" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -732,7 +734,7 @@
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-384" height="448" />
+            <rect width="256" x="64" y="-384" height="512" />
         </blockdef>
         <blockdef name="psudo_data_allOne">
             <timestamp>2016-7-25T20:3:3</timestamp>
@@ -1814,6 +1816,7 @@
             <blockpin signalname="data_send_delay_time(7:0)" name="delay_time(7:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
+            <blockpin signalname="b_force_packet" name="b_force_packet" />
         </block>
         <block symbolname="obuf" name="XLXI_6291">
             <blockpin signalname="ethernet_overflow" name="I" />
@@ -2759,6 +2762,10 @@
             <wire x2="1888" y1="1392" y2="1392" x1="1872" />
         </branch>
         <text style="fontsize:24;fontname:Arial" x="3784" y="512">The first 64 bits are actual signal, the rest are error and where a new peak starts</text>
+        <branch name="b_force_packet">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6800" y="880" type="branch" />
+            <wire x2="6800" y1="880" y2="880" x1="6784" />
+        </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

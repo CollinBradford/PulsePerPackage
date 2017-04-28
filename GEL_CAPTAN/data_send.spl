@@ -7,5 +7,6 @@ b_enable
 =delay_time[7:0]=
 [Outputs]
 b_data_we
+b_force_packet
 =b_data[63:0]=
 [BiDir]

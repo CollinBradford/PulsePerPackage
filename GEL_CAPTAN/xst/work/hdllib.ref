@@ -11,8 +11,8 @@ AR addr_fifo addr_fifo_a D:/cbradford/PulsePerPackage/ipcore_dir/ADDR_FIFO.vhd s
 EN reset_mgr NULL D:/cbradford/PulsePerPackage/oei/reset_mgr.vhd sub00/vhpl52 1493409758
 AR ram_comm_dec arch D:/cbradford/PulsePerPackage/oei/ram_comm_dec.vhd sub00/vhpl37 1493409743
 EN ip_checksum_calc NULL D:/cbradford/PulsePerPackage/oei/ip_checksum_calc.vhd sub00/vhpl08 1493409714
-EN data_manager NULL D:/cbradford/PulsePerPackage/oei/data_manager.vhd sub00/vhpl48 1493409754
 EN fd8re_mxilinx_top_level NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl80 1493409786
+EN data_manager NULL D:/cbradford/PulsePerPackage/oei/data_manager.vhd sub00/vhpl48 1493409754
 EN burst_controller_sm NULL D:/cbradford/PulsePerPackage/oei/burst_controller_sm.vhd sub00/vhpl32 1493409738
 AR buffer_10bit behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/buffer_10bit.vhd sub00/vhpl59 1493409765
 EN dataout_mux NULL D:/cbradford/PulsePerPackage/oei/dataout_mux.vhd sub00/vhpl12 1493409718
@@ -21,9 +21,9 @@ AR version_blk behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/VERSION_BLK.vh
 EN data_fifo_0 NULL D:/cbradford/PulsePerPackage/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl26 1493409732
 AR udp_data_splicer udp_data_splicer_arch D:/cbradford/PulsePerPackage/oei/udp_data_splicer.vhd sub00/vhpl23 1493409729
 AR address_container arch D:/cbradford/PulsePerPackage/oei/address_container.vhd sub00/vhpl03 1493409709
-EN or33 NULL D:/cbradford/PulsePerPackage/oei/or33.vhd sub00/vhpl06 1493409712
-AR mux64_8 behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl57 1493409763
 AR top_level behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl89 1493409795
+AR mux64_8 behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl57 1493409763
+EN or33 NULL D:/cbradford/PulsePerPackage/oei/or33.vhd sub00/vhpl06 1493409712
 EN d4_16e_mxilinx_top_level NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl86 1493409792
 EN adc_fifo NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl74 1493409780
 AR tx_seq_ctl arch D:/cbradford/PulsePerPackage/oei/tx_seq_ctl.vhd sub00/vhpl39 1493409745
@@ -34,8 +34,8 @@ AR clocklatchsignals behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLat
 AR decipherer decipherer_arch D:/cbradford/PulsePerPackage/oei/decipherer.vhd sub00/vhpl15 1493409721
 EN ram_comm_dec NULL D:/cbradford/PulsePerPackage/oei/ram_comm_dec.vhd sub00/vhpl36 1493409742
 EN tx_seq_ctl NULL D:/cbradford/PulsePerPackage/oei/tx_seq_ctl.vhd sub00/vhpl38 1493409744
-AR ethernet_controller_wrapper arch D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd sub00/vhpl47 1493409753
 AR adc_fifo adc_fifo_a D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl75 1493409781
+AR ethernet_controller_wrapper arch D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd sub00/vhpl47 1493409753
 EN rx_ctl NULL D:/cbradford/PulsePerPackage/oei/rx_ctl.vhd sub00/vhpl34 1493409740
 AR filter_data_out filter_data_out_arch D:/cbradford/PulsePerPackage/oei/filter_data_out.vhd sub00/vhpl17 1493409723
 AR psudocounter behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.vhd sub00/vhpl79 1493409785
@@ -45,7 +45,7 @@ AR info_fifo_0 info_fifo_0_a D:/cbradford/PulsePerPackage/ipcore_dir/INFO_FIFO_0
 AR pulser behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/Pulser.vhd sub00/vhpl65 1493409771
 AR psudo_data_allone behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/psudo_data_allOne.vhd sub00/vhpl71 1493409777
 EN version_blk NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/VERSION_BLK.vhd sub00/vhpl54 1493409760
-AR data_send behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd sub00/vhpl69 1493409775
+AR data_send behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd sub00/vhpl69 1493414128
 AR rx_ctl arch D:/cbradford/PulsePerPackage/oei/rx_ctl.vhd sub00/vhpl35 1493409741
 EN peakfinder NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl76 1493409782
 AR data_fifo_0 data_fifo_0_a D:/cbradford/PulsePerPackage/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl27 1493409733
@@ -58,7 +58,7 @@ AR fd8re_mxilinx_top_level behavioral D:/cbradford/PulsePerPackage/GEL_CAPTAN/TO
 EN icmp_ping_shift_reg NULL D:/cbradford/PulsePerPackage/oei/icmp_ping_shift_reg.vhd sub00/vhpl20 1493409726
 EN ethernet_fifo NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd sub00/vhpl66 1493409772
 AR ethernet_controller arch D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd sub00/vhpl41 1493409747
-EN data_send NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd sub00/vhpl68 1493409774
+EN data_send NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd sub00/vhpl68 1493414127
 EN psudocounter NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.vhd sub00/vhpl78 1493409784
 EN psudo_data_allone NULL D:/cbradford/PulsePerPackage/GEL_CAPTAN/psudo_data_allOne.vhd sub00/vhpl70 1493409776
 EN icmp_ping_checksum_calc NULL D:/cbradford/PulsePerPackage/oei/icmp_ping_checksum_calc.vhd sub00/vhpl18 1493409724
