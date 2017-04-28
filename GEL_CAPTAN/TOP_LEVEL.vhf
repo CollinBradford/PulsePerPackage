@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 04/07/2017 14:23:29
+-- /___/   /\     Timestamp : 04/28/2017 15:01:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -655,8 +655,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal dcm_reset_1               : std_logic;
    signal dcm_reset_2               : std_logic;
    signal EbufValid                 : std_logic;
-   signal ethernet_data_out         : std_logic_vector (63 downto 0);
-   signal ethernet_fifo_din         : std_logic_vector (63 downto 0);
+   signal ethernet_fifo_din         : std_logic_vector (64 downto 0);
+   signal ethernet_fifo_dout        : std_logic_vector (64 downto 0);
    signal ethernet_fifo_empty       : std_logic;
    signal ethernet_fifo_in_en       : std_logic;
    signal ethernet_overflow         : std_logic;
@@ -690,7 +690,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal GTX_CLK_0_sig             : std_logic;
    signal MASTER_CLK                : std_logic;
    signal newpeak_testpoint         : std_logic;
-   signal new_peak                  : std_logic;
    signal PHY_TXD_sig               : std_logic_vector (7 downto 0);
    signal PHY_TXEN_sig              : std_logic;
    signal PHY_TXER_sig              : std_logic;
@@ -1060,12 +1059,12 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component ethernet_FIFO
       port ( rst      : in    std_logic; 
              wr_clk   : in    std_logic; 
-             din      : in    std_logic_vector (63 downto 0); 
+             din      : in    std_logic_vector (64 downto 0); 
              wr_en    : in    std_logic; 
              full     : out   std_logic; 
              overflow : out   std_logic; 
              rd_clk   : in    std_logic; 
-             dout     : out   std_logic_vector (63 downto 0); 
+             dout     : out   std_logic_vector (64 downto 0); 
              rd_en    : in    std_logic; 
              empty    : out   std_logic; 
              valid    : out   std_logic);
@@ -1076,10 +1075,10 @@ architecture BEHAVIORAL of TOP_LEVEL is
              clk        : in    std_logic; 
              empty      : in    std_logic; 
              b_enable   : in    std_logic; 
-             din        : in    std_logic_vector (63 downto 0); 
+             din        : in    std_logic_vector (64 downto 0); 
+             delay_time : in    std_logic_vector (7 downto 0); 
              b_data_we  : out   std_logic; 
-             b_data     : out   std_logic_vector (63 downto 0); 
-             delay_time : in    std_logic_vector (7 downto 0));
+             b_data     : out   std_logic_vector (63 downto 0));
    end component;
    
    component psudo_data_allOne
@@ -1914,13 +1913,13 @@ begin
                 Q(7 downto 0)=>threshold(7 downto 0));
    
    XLXI_6248 : ethernet_FIFO
-      port map (din(63 downto 0)=>ethernet_fifo_din(63 downto 0),
+      port map (din(64 downto 0)=>ethernet_fifo_din(64 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>b_data_we,
                 rst=>reset,
                 wr_clk=>MASTER_CLK,
                 wr_en=>ethernet_fifo_in_en,
-                dout(63 downto 0)=>ethernet_data_out(63 downto 0),
+                dout(64 downto 0)=>ethernet_fifo_dout(64 downto 0),
                 empty=>ethernet_fifo_empty,
                 full=>open,
                 overflow=>ethernet_overflow,
@@ -1937,7 +1936,7 @@ begin
       port map (b_enable=>b_enable,
                 clk=>MASTER_CLK,
                 delay_time(7 downto 0)=>data_send_delay_time(7 downto 0),
-                din(63 downto 0)=>ethernet_data_out(63 downto 0),
+                din(64 downto 0)=>ethernet_fifo_dout(64 downto 0),
                 empty=>ethernet_fifo_empty,
                 rst=>reset,
                 b_data(63 downto 0)=>b_data(63 downto 0),
@@ -2062,7 +2061,7 @@ begin
    XLXI_6350 : OR2
       port map (I0=>XLXN_15547,
                 I1=>newpeak_testpoint,
-                O=>new_peak);
+                O=>ethernet_fifo_din(64));
    
    XLXI_6351 : GND
       port map (G=>XLXN_15547);

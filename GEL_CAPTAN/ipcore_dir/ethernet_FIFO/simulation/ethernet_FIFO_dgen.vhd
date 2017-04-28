@@ -97,7 +97,7 @@ ARCHITECTURE fg_dg_arch OF ethernet_FIFO_dgen IS
  BEGIN
   
    WR_EN   <= PRC_WR_EN ;
-   WR_DATA <= wr_data_i AFTER 100 ns;
+   WR_DATA <= wr_data_i AFTER 50 ns;
 
   ----------------------------------------------
   -- Generation of DATA

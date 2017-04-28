@@ -34,7 +34,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity data_send is
     Port ( rst : in  STD_LOGIC;
            clk : in  STD_LOGIC;
-           din : in  STD_LOGIC_VECTOR (63 downto 0);
+           din : in  STD_LOGIC_VECTOR (64 downto 0);
            empty : in  STD_LOGIC;
            b_enable : in  STD_LOGIC;
            delay_time : in  STD_LOGIC_VECTOR(7 downto 0);

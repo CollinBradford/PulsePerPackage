@@ -232,7 +232,6 @@
         <signal name="rx_data(7:0)" />
         <signal name="ethernet_fifo_in_en" />
         <signal name="psudo_data_attr_map" />
-        <signal name="ethernet_data_out(63:0)" />
         <signal name="ethernet_overflow" />
         <signal name="ethernet_fifo_empty" />
         <signal name="U10_1" />
@@ -280,7 +279,7 @@
         <signal name="ethernet_fifo_din(63:0)" />
         <signal name="XLXN_15547" />
         <signal name="newpeak_testpoint" />
-        <signal name="new_peak" />
+        <signal name="ethernet_fifo_din(64)" />
         <signal name="rx_data(2)" />
         <signal name="pusdo_data_select(2)" />
         <signal name="XLXN_15550(7:0)" />
@@ -291,6 +290,8 @@
         <signal name="XLXN_15555(7:0)" />
         <signal name="XLXN_15556(7:0)" />
         <signal name="XLXN_15557(7:0)" />
+        <signal name="ethernet_fifo_din(64:0)" />
+        <signal name="ethernet_fifo_dout(64:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -688,7 +689,7 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="ethernet_FIFO">
-            <timestamp>2017-3-10T22:45:11</timestamp>
+            <timestamp>2017-4-28T19:50:28</timestamp>
             <rect width="768" x="32" y="32" height="4032" />
             <line x2="32" y1="112" y2="112" x1="0" />
             <line x2="32" y1="208" y2="208" x1="0" />
@@ -719,7 +720,7 @@
             <rect width="400" x="64" y="-320" height="640" />
         </blockdef>
         <blockdef name="data_send">
-            <timestamp>2016-8-5T18:24:18</timestamp>
+            <timestamp>2017-4-28T19:56:26</timestamp>
             <rect width="64" x="0" y="20" height="24" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -1794,12 +1795,12 @@
         <block symbolname="ethernet_FIFO" name="XLXI_6248">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="wr_clk" />
-            <blockpin signalname="ethernet_fifo_din(63:0)" name="din(63:0)" />
+            <blockpin signalname="ethernet_fifo_din(64:0)" name="din(64:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="wr_en" />
             <blockpin name="full" />
             <blockpin signalname="ethernet_overflow" name="overflow" />
             <blockpin signalname="MASTER_CLK" name="rd_clk" />
-            <blockpin signalname="ethernet_data_out(63:0)" name="dout(63:0)" />
+            <blockpin signalname="ethernet_fifo_dout(64:0)" name="dout(64:0)" />
             <blockpin signalname="b_data_we" name="rd_en" />
             <blockpin signalname="ethernet_fifo_empty" name="empty" />
             <blockpin signalname="EbufValid" name="valid" />
@@ -1809,10 +1810,10 @@
             <blockpin signalname="MASTER_CLK" name="clk" />
             <blockpin signalname="ethernet_fifo_empty" name="empty" />
             <blockpin signalname="b_enable" name="b_enable" />
-            <blockpin signalname="ethernet_data_out(63:0)" name="din(63:0)" />
+            <blockpin signalname="ethernet_fifo_dout(64:0)" name="din(64:0)" />
+            <blockpin signalname="data_send_delay_time(7:0)" name="delay_time(7:0)" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
-            <blockpin signalname="data_send_delay_time(7:0)" name="delay_time(7:0)" />
         </block>
         <block symbolname="obuf" name="XLXI_6291">
             <blockpin signalname="ethernet_overflow" name="I" />
@@ -1917,7 +1918,7 @@
         <block symbolname="or2" name="XLXI_6350">
             <blockpin signalname="XLXN_15547" name="I0" />
             <blockpin signalname="newpeak_testpoint" name="I1" />
-            <blockpin signalname="new_peak" name="O" />
+            <blockpin signalname="ethernet_fifo_din(64)" name="O" />
         </block>
         <block symbolname="PsudoCounter" name="XLXI_6354">
             <blockpin signalname="FADC_DCLK" name="clk" />
@@ -2327,11 +2328,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="384" type="branch" />
             <wire x2="4976" y1="384" y2="384" x1="4944" />
         </branch>
-        <branch name="ethernet_data_out(63:0)">
+        <branch name="ethernet_fifo_dout(64:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="544" type="branch" />
             <wire x2="5872" y1="544" y2="544" x1="5808" />
         </branch>
-        <branch name="ethernet_data_out(63:0)">
+        <branch name="ethernet_fifo_dout(64:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="752" type="branch" />
             <wire x2="6368" y1="752" y2="752" x1="6352" />
             <wire x2="6400" y1="752" y2="752" x1="6368" />
@@ -2345,7 +2346,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
             <wire x2="4976" y1="480" y2="480" x1="4944" />
         </branch>
-        <branch name="ethernet_fifo_din(63:0)">
+        <branch name="ethernet_fifo_din(64:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="512" type="branch" />
             <wire x2="4976" y1="512" y2="512" x1="4944" />
         </branch>
@@ -2684,7 +2685,7 @@
         </branch>
         <instance x="4160" y="2176" name="XLXI_6351" orien="R0" />
         <instance x="4448" y="2032" name="XLXI_6350" orien="R0" />
-        <branch name="new_peak">
+        <branch name="ethernet_fifo_din(64)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4720" y="1936" type="branch" />
             <wire x2="4720" y1="1936" y2="1936" x1="4704" />
         </branch>
@@ -2757,6 +2758,7 @@
         <branch name="XLXN_15557(7:0)">
             <wire x2="1888" y1="1392" y2="1392" x1="1872" />
         </branch>
+        <text style="fontsize:24;fontname:Arial" x="3784" y="512">The first 64 bits are actual signal, the rest are error and where a new peak starts</text>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

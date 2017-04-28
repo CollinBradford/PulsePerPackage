@@ -1,0 +1,11 @@
+[Inputs]
+rst
+clk
+empty
+b_enable
+=din[64:0]=
+=delay_time[7:0]=
+[Outputs]
+b_data_we
+=b_data[63:0]=
+[BiDir]

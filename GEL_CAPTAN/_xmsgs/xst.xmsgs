@@ -5,37 +5,37 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D10</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D10</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D11</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D11</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D12</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D12</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D13</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D13</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D14</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D14</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D15</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D15</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D9</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1248</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D9</arg>&apos; of component &apos;<arg fmt="%s" index="4">D4_16E_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1523</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">O</arg>&apos; of component &apos;<arg fmt="%s" index="4">M2_1_MXILINX_TOP_LEVEL</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1522</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">O</arg>&apos; of component &apos;<arg fmt="%s" index="4">M2_1_MXILINX_TOP_LEVEL</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1916</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">full</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernet_FIFO</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1915</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">full</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernet_FIFO</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1916</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ethernet_FIFO</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">1915</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ethernet_FIFO</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">2034</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ADC_FIFO</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf</arg>&quot; line <arg fmt="%d" index="2">2033</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ADC_FIFO</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd</arg>&quot; line <arg fmt="%d" index="2">145</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">udp_fwd_port</arg>&apos; of component &apos;<arg fmt="%s" index="4">ethernet_controller_wrapper</arg>&apos;.
@@ -180,6 +180,9 @@
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">internal_eth_dout_50$mux0008</arg>&gt; in unit &lt;<arg fmt="%s" index="2">ethernet_interface</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">din&lt;64&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">b_enable</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -371,9 +374,6 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">psi_status&lt;3:1&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">new_peak</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">fadc_wctrl_done</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
@@ -419,16 +419,16 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">adc_data_in</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_15557</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_15557</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_15556</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_15556</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_15555</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_15555</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_15554</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_15554</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_15553</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.

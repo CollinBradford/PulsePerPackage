@@ -187,8 +187,7 @@ Architecture behavioral of Entity clocklatchsignals is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
 Architecture adc_fifo_a of Entity adc_fifo is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Entity <peakfinder> compiled.
-Entity <peakfinder> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.vhd" in Library work.
 Architecture behavioral of Entity psudocounter is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
@@ -318,13 +317,13 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1249: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1248: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -464,7 +463,7 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1523: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1522: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -600,8 +599,8 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1916: Unconnected output port 'full' of component 'ethernet_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1916: Instantiating black box module <ethernet_FIFO>.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1915: Unconnected output port 'full' of component 'ethernet_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1915: Instantiating black box module <ethernet_FIFO>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6291> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6291> in unit <TOP_LEVEL>.
@@ -619,7 +618,7 @@ WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 
     Set user-defined property "DRIVE =  12" for instance <XLXI_6339> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6339> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2034: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2033: Instantiating black box module <ADC_FIFO>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -866,6 +865,7 @@ Unit <Pulser> synthesized.
 
 Synthesizing Unit <data_send>.
     Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd".
+WARNING:Xst:647 - Input <din<64>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <b_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <b_data_we>.
     Found 8-bit up counter for signal <count_delay>.
@@ -1697,7 +1697,6 @@ WARNING:Xst:653 - Signal <psi_status<55:13>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <psi_status<11:9>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <psi_status<7:5>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
 WARNING:Xst:653 - Signal <psi_status<3:1>> is used but never assigned. This sourceless signal will be automatically connected to value 000.
-WARNING:Xst:646 - Signal <new_peak> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <fadc_wctrl_done> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <fadc_waddr_rise> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
 WARNING:Xst:653 - Signal <fadc_rdy_for_trigger> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -2918,7 +2917,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 104520 / 7186
+  Total number of paths / destination ports: 104521 / 7187
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3122,12 +3121,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 67.00 secs
-Total CPU time to Xst completion: 67.61 secs
+Total REAL time to Xst completion: 66.00 secs
+Total CPU time to Xst completion: 66.25 secs
  
 --> 
 
-Total memory usage is 635092 kilobytes
+Total memory usage is 631820 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  309 (   0 filtered)

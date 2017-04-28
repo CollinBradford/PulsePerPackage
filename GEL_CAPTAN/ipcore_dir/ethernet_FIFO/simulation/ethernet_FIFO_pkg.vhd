@@ -205,8 +205,8 @@ PACKAGE ethernet_FIFO_pkg IS
            OVERFLOW                  : OUT std_logic;
            WR_EN 		     : IN  std_logic;
            RD_EN                     : IN  std_logic;
-           DIN                       : IN  std_logic_vector(64-1 DOWNTO 0);
-           DOUT                      : OUT std_logic_vector(64-1 DOWNTO 0);
+           DIN                       : IN  std_logic_vector(65-1 DOWNTO 0);
+           DOUT                      : OUT std_logic_vector(65-1 DOWNTO 0);
            FULL                      : OUT std_logic;
            EMPTY                     : OUT std_logic);
 
