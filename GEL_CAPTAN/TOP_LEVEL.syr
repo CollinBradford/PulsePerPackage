@@ -111,96 +111,136 @@ Cores Search Directories           : {"../ipcore_dir" "ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/params_package.vhd" in Library work.
-Architecture params_package of Entity params_package is up to date.
+Package <params_package> compiled.
+Package body <params_package> compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/address_container.vhd" in Library work.
-Architecture arch of Entity address_container is up to date.
+Entity <address_container> compiled.
+Entity <address_container> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/arp_reply.vhd" in Library work.
-Architecture arp_reply_arch of Entity arp_reply is up to date.
+Entity <arp_reply> compiled.
+Entity <arp_reply> (Architecture <arp_reply_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/or33.vhd" in Library work.
-Architecture or33_arch of Entity or33 is up to date.
+Entity <or33> compiled.
+Entity <or33> (Architecture <or33_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ip_checksum_calc.vhd" in Library work.
-Architecture arch of Entity ip_checksum_calc is up to date.
+Entity <ip_checksum_calc> compiled.
+Entity <ip_checksum_calc> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/create_packet.vhd" in Library work.
-Architecture create_packet_arch of Entity create_packet is up to date.
+Entity <create_packet> compiled.
+Entity <create_packet> (Architecture <create_packet_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/dataout_mux.vhd" in Library work.
-Architecture dataout_mux_arch of Entity dataout_mux is up to date.
+Entity <dataout_mux> compiled.
+Entity <dataout_mux> (Architecture <dataout_mux_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/decipherer.vhd" in Library work.
-Architecture decipherer_arch of Entity decipherer is up to date.
+Entity <decipherer> compiled.
+Entity <decipherer> (Architecture <decipherer_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/filter_data_out.vhd" in Library work.
-Architecture filter_data_out_arch of Entity filter_data_out is up to date.
+Entity <filter_data_out> compiled.
+Entity <filter_data_out> (Architecture <filter_data_out_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/icmp_ping_checksum_calc.vhd" in Library work.
-Architecture icmp_ping_checksum_calc_arch of Entity icmp_ping_checksum_calc is up to date.
+Entity <icmp_ping_checksum_calc> compiled.
+Entity <icmp_ping_checksum_calc> (Architecture <icmp_ping_checksum_calc_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/icmp_ping_shift_reg.vhd" in Library work.
-Architecture arch of Entity icmp_ping_shift_reg is up to date.
+Entity <icmp_ping_shift_reg> compiled.
+Entity <icmp_ping_shift_reg> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/udp_data_splicer.vhd" in Library work.
-Architecture udp_data_splicer_arch of Entity udp_data_splicer is up to date.
+Entity <udp_data_splicer> compiled.
+Entity <udp_data_splicer> (Architecture <udp_data_splicer_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/user_addrs_mux.vhd" in Library work.
-Architecture user_addrs_mux_arch of Entity user_addrs_mux is up to date.
+Entity <user_addrs_mux> compiled.
+Entity <user_addrs_mux> (Architecture <user_addrs_mux_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
-Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
+Entity <DATA_FIFO_0> compiled.
+Entity <DATA_FIFO_0> (Architecture <DATA_FIFO_0_a>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
-Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
+Entity <INFO_FIFO_0> compiled.
+Entity <INFO_FIFO_0> (Architecture <INFO_FIFO_0_a>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/ipcore_dir/ADDR_FIFO.vhd" in Library work.
-Architecture addr_fifo_a of Entity addr_fifo is up to date.
+Entity <ADDR_FIFO> compiled.
+Entity <ADDR_FIFO> (Architecture <ADDR_FIFO_a>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/burst_controller_sm.vhd" in Library work.
-Architecture burst_controller_sm_arch of Entity burst_controller_sm is up to date.
+Entity <burst_controller_sm> compiled.
+Entity <burst_controller_sm> (Architecture <burst_controller_sm_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/rx_ctl.vhd" in Library work.
-Architecture arch of Entity rx_ctl is up to date.
+Entity <rx_ctl> compiled.
+Entity <rx_ctl> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ram_comm_dec.vhd" in Library work.
-Architecture arch of Entity ram_comm_dec is up to date.
+Entity <ram_comm_dec> compiled.
+Entity <ram_comm_dec> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/tx_seq_ctl.vhd" in Library work.
-Architecture arch of Entity tx_seq_ctl is up to date.
+Entity <tx_seq_ctl> compiled.
+Entity <tx_seq_ctl> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_controller.vhd" in Library work.
-Architecture arch of Entity ethernet_controller is up to date.
+Entity <ethernet_controller> compiled.
+Entity <ethernet_controller> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/xmii_handler.vhd" in Library work.
-Architecture arch of Entity mii_100_1000_handler is up to date.
+Entity <MII_100_1000_handler> compiled.
+Entity <MII_100_1000_handler> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/crc_splice.vhd" in Library work.
-Architecture arch of Entity crc_splice is up to date.
+Entity <crc_splice> compiled.
+Entity <crc_splice> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_controller_wrapper.vhd" in Library work.
-Architecture arch of Entity ethernet_controller_wrapper is up to date.
+Entity <ethernet_controller_wrapper> compiled.
+Entity <ethernet_controller_wrapper> (Architecture <arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/data_manager.vhd" in Library work.
-Architecture behavioral of Entity data_manager is up to date.
+Entity <data_manager> compiled.
+Entity <data_manager> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/burst_traffic_controller.vhd" in Library work.
-Architecture burst_traffic_controller_arch of Entity burst_traffic_controller is up to date.
+Entity <burst_traffic_controller> compiled.
+Entity <burst_traffic_controller> (Architecture <burst_traffic_controller_arch>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/reset_mgr.vhd" in Library work.
-Architecture behavioral of Entity reset_mgr is up to date.
+Entity <reset_mgr> compiled.
+Entity <reset_mgr> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
-Architecture behavioral of Entity version_blk is up to date.
+Entity <VERSION_BLK> compiled.
+Entity <VERSION_BLK> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/MUX64_8.vhd" in Library work.
-Architecture behavioral of Entity mux64_8 is up to date.
+Entity <MUX64_8> compiled.
+Entity <MUX64_8> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
-Architecture behavioral of Entity buffer_10bit is up to date.
+Entity <buffer_10bit> compiled.
+Entity <buffer_10bit> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
-Architecture behavioral of Entity trigger_recv_blk is up to date.
+Entity <trigger_recv_blk> compiled.
+Entity <trigger_recv_blk> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd" in Library work.
-Architecture behavioral of Entity ethernet_interface is up to date.
+Entity <ethernet_interface> compiled.
+Entity <ethernet_interface> (Architecture <BEHAVIORAL>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/Pulser.vhd" in Library work.
-Architecture behavioral of Entity pulser is up to date.
+Entity <Pulser> compiled.
+Entity <Pulser> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd" in Library work.
-Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
+Entity <ethernet_FIFO> compiled.
+Entity <ethernet_FIFO> (Architecture <ethernet_FIFO_a>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd" in Library work.
-Architecture behavioral of Entity data_send is up to date.
+Entity <data_send> compiled.
+Entity <data_send> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/psudo_data_allOne.vhd" in Library work.
-Architecture behavioral of Entity psudo_data_allone is up to date.
+Entity <psudo_data_allOne> compiled.
+Entity <psudo_data_allOne> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
-Architecture behavioral of Entity clocklatchsignals is up to date.
+Entity <ClockLatchSignals> compiled.
+Entity <ClockLatchSignals> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd" in Library work.
-Architecture adc_fifo_a of Entity adc_fifo is up to date.
+Entity <ADC_FIFO> compiled.
+Entity <ADC_FIFO> (Architecture <ADC_FIFO_a>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd" in Library work.
-Architecture behavioral of Entity peakfinder is up to date.
+Entity <PeakFinder> compiled.
+Entity <PeakFinder> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.vhd" in Library work.
-Architecture behavioral of Entity psudocounter is up to date.
+Entity <PsudoCounter> compiled.
+Entity <PsudoCounter> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <fd8re_mxilinx_top_level> compiled.
-Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <fd16re_mxilinx_top_level> compiled.
-Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <m2_1_mxilinx_top_level> compiled.
-Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <d4_16e_mxilinx_top_level> compiled.
-Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
-Entity <top_level> compiled.
-Entity <top_level> (Architecture <behavioral>) compiled.
+Entity <FD8RE_MXILINX_TOP_LEVEL> compiled.
+Entity <FD8RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD16RE_MXILINX_TOP_LEVEL> compiled.
+Entity <FD16RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1_MXILINX_TOP_LEVEL> compiled.
+Entity <M2_1_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <D4_16E_MXILINX_TOP_LEVEL> compiled.
+Entity <D4_16E_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <TOP_LEVEL> compiled.
+Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -212,37 +252,37 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <Pulser> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <Pulser> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
-Analyzing hierarchy for entity <data_send> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <data_send> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <ClockLatchSignals> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <ClockLatchSignals> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <PsudoCounter> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <PsudoCounter> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -298,7 +338,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -621,19 +661,19 @@ WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 
 WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2038: Instantiating black box module <ADC_FIFO>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
-Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
 Entity <D4_16E_MXILINX_TOP_LEVEL> analyzed. Unit <D4_16E_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <VERSION_BLK> in library <work> (Architecture <behavioral>).
+Analyzing Entity <VERSION_BLK> in library <work> (Architecture <Behavioral>).
 Entity <VERSION_BLK> analyzed. Unit <VERSION_BLK> generated.
 
-Analyzing Entity <MUX64_8> in library <work> (Architecture <behavioral>).
+Analyzing Entity <MUX64_8> in library <work> (Architecture <Behavioral>).
 Entity <MUX64_8> analyzed. Unit <MUX64_8> generated.
 
-Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
 Entity <M2_1_MXILINX_TOP_LEVEL> analyzed. Unit <M2_1_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_TOP_LEVEL>.
@@ -652,13 +692,13 @@ Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beh
     Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_TOP_LEVEL>.
 Entity <FD16RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD16RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <buffer_10bit> in library <work> (Architecture <behavioral>).
+Analyzing Entity <buffer_10bit> in library <work> (Architecture <Behavioral>).
 Entity <buffer_10bit> analyzed. Unit <buffer_10bit> generated.
 
-Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <behavioral>).
+Analyzing Entity <trigger_recv_blk> in library <work> (Architecture <Behavioral>).
 Entity <trigger_recv_blk> analyzed. Unit <trigger_recv_blk> generated.
 
-Analyzing Entity <ethernet_interface> in library <work> (Architecture <behavioral>).
+Analyzing Entity <ethernet_interface> in library <work> (Architecture <BEHAVIORAL>).
 WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/oei/ethernet_interface.vhd" line 146: Unconnected output port 'udp_fwd_port' of component 'ethernet_controller_wrapper'.
 Entity <ethernet_interface> analyzed. Unit <ethernet_interface> generated.
 
@@ -779,10 +819,10 @@ Entity <burst_traffic_controller> analyzed. Unit <burst_traffic_controller> gene
 Analyzing Entity <reset_mgr> in library <work> (Architecture <Behavioral>).
 Entity <reset_mgr> analyzed. Unit <reset_mgr> generated.
 
-Analyzing Entity <Pulser> in library <work> (Architecture <behavioral>).
+Analyzing Entity <Pulser> in library <work> (Architecture <Behavioral>).
 Entity <Pulser> analyzed. Unit <Pulser> generated.
 
-Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
+Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8RE_MXILINX_TOP_LEVEL>.
@@ -793,23 +833,23 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <beha
     Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8RE_MXILINX_TOP_LEVEL>.
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
+Analyzing Entity <data_send> in library <work> (Architecture <Behavioral>).
 Entity <data_send> analyzed. Unit <data_send> generated.
 
-Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <behavioral>).
+Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <Behavioral>).
 Entity <psudo_data_allOne> analyzed. Unit <psudo_data_allOne> generated.
 
-Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <behavioral>).
+Analyzing Entity <ClockLatchSignals> in library <work> (Architecture <Behavioral>).
 WARNING:Xst:819 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd" line 59: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <triggered>, <done>, <delay>, <clock_place>
 Entity <ClockLatchSignals> analyzed. Unit <ClockLatchSignals> generated.
 
-Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
+Analyzing Entity <PeakFinder> in library <work> (Architecture <Behavioral>).
 WARNING:Xst:819 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PeakFinder.vhd" line 67: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <data_in>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
-Analyzing Entity <PsudoCounter> in library <work> (Architecture <behavioral>).
+Analyzing Entity <PsudoCounter> in library <work> (Architecture <Behavioral>).
 Entity <PsudoCounter> analyzed. Unit <PsudoCounter> generated.
 
 
@@ -2625,9 +2665,6 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0_1> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1> in Unit <TX_CTRL_MAC_FIFO> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1> 
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop XLXI_6227/ec_wrapper/ethernet_controller/CreatePacketBlock/Sreg0_FSM_FFd5 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -2646,8 +2683,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1644
- Flip-Flops                                            : 1644
+# Registers                                            : 1641
+ Flip-Flops                                            : 1641
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2678,7 +2715,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5953
+# BELS                             : 5955
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2690,15 +2727,15 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 180
 #      LUT1                        : 237
-#      LUT2                        : 555
-#      LUT2_D                      : 33
-#      LUT2_L                      : 29
-#      LUT3                        : 1067
-#      LUT3_D                      : 29
-#      LUT3_L                      : 65
-#      LUT4                        : 1872
-#      LUT4_D                      : 76
-#      LUT4_L                      : 257
+#      LUT2                        : 556
+#      LUT2_D                      : 35
+#      LUT2_L                      : 27
+#      LUT3                        : 1068
+#      LUT3_D                      : 30
+#      LUT3_L                      : 64
+#      LUT4                        : 1868
+#      LUT4_D                      : 78
+#      LUT4_L                      : 259
 #      MUXCY                       : 860
 #      MUXF5                       : 144
 #      MUXF6                       : 40
@@ -2706,7 +2743,7 @@ Cell Usage :
 #      VCC                         : 26
 #      XOR2                        : 2
 #      XORCY                       : 419
-# FlipFlops/Latches                : 2397
+# FlipFlops/Latches                : 2394
 #      FD                          : 124
 #      FDC                         : 140
 #      FDCE                        : 143
@@ -2714,7 +2751,7 @@ Cell Usage :
 #      FDP                         : 30
 #      FDPE                        : 11
 #      FDR                         : 116
-#      FDRE                        : 1165
+#      FDRE                        : 1162
 #      FDRS                        : 49
 #      FDRSE                       : 2
 #      FDS                         : 16
@@ -2745,10 +2782,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3110  out of  10752    28%  
- Number of Slice Flip Flops:           2397  out of  21504    11%  
- Number of 4 input LUTs:               4808  out of  21504    22%  
-    Number used as logic:              4400
+ Number of Slices:                     3112  out of  10752    28%  
+ Number of Slice Flip Flops:           2394  out of  21504    11%  
+ Number of 4 input LUTs:               4810  out of  21504    22%  
+    Number used as logic:              4402
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2779,7 +2816,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG             | 2543  |
+GEL_RXCLK                          | IBUFG+BUFG             | 2540  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 69    |
 SECONDARY_CLK                      | IBUFG                  | 18    |
 -----------------------------------+------------------------+-------+
@@ -2865,7 +2902,7 @@ Offset:              0.742ns (Levels of Logic = 0)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
   Clock period: 7.842ns (frequency: 127.513MHz)
-  Total number of paths / destination ports: 2017 / 1747
+  Total number of paths / destination ports: 2014 / 1744
 -------------------------------------------------------------------------
 Offset:              7.842ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
@@ -2892,10 +2929,10 @@ Offset:              7.842ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 2.913ns (frequency: 343.253MHz)
+  Clock period: 2.810ns (frequency: 355.834MHz)
   Total number of paths / destination ports: 18 / 18
 -------------------------------------------------------------------------
-Offset:              2.913ns (Levels of Logic = 2)
+Offset:              2.810ns (Levels of Logic = 2)
   Source:            XLXI_6227/internal_reset (FF)
   Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
   Source Clock:      GEL_RXCLK rising
@@ -2905,18 +2942,18 @@ Offset:              2.913ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.360   0.703  internal_reset (internal_reset)
+     FD:C->Q               3   0.360   0.600  internal_reset (internal_reset)
      begin scope: 'reset_mgr'
-     LUT3:I0->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
+     LUT3:I1->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
      FDRE:R                    1.062          cnt_0
     ----------------------------------------
-    Total                      2.913ns (1.617ns logic, 1.296ns route)
-                                       (55.5% logic, 44.5% route)
+    Total                      2.810ns (1.617ns logic, 1.193ns route)
+                                       (57.5% logic, 42.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 104127 / 7200
+  Total number of paths / destination ports: 104076 / 7195
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -2980,10 +3017,10 @@ Delay:               2.940ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 4.543ns (frequency: 220.095MHz)
+  Clock period: 4.646ns (frequency: 215.216MHz)
   Total number of paths / destination ports: 615 / 49
 -------------------------------------------------------------------------
-Delay:               4.543ns (Levels of Logic = 5)
+Delay:               4.646ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/cnt_7 (FF)
   Destination:       XLXI_6227/reset_mgr/cnt_0 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2997,12 +3034,12 @@ Delay:               4.543ns (Levels of Logic = 5)
      LUT4:I0->O            1   0.195   0.000  Mcompar_cnt_cmp_lt0000_lut<3> (Mcompar_cnt_cmp_lt0000_lut<3>)
      MUXCY:S->O            1   0.366   0.000  Mcompar_cnt_cmp_lt0000_cy<3> (Mcompar_cnt_cmp_lt0000_cy<3>)
      MUXCY:CI->O           1   0.045   0.000  Mcompar_cnt_cmp_lt0000_cy<4> (Mcompar_cnt_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           3   0.369   0.600  Mcompar_cnt_cmp_lt0000_cy<5> (Mcompar_cnt_cmp_lt0000_cy<5>)
-     LUT3:I1->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
+     MUXCY:CI->O           3   0.369   0.703  Mcompar_cnt_cmp_lt0000_cy<5> (Mcompar_cnt_cmp_lt0000_cy<5>)
+     LUT3:I0->O           16   0.195   0.593  cnt_and00001 (cnt_and0000)
      FDRE:R                    1.062          cnt_0
     ----------------------------------------
-    Total                      4.543ns (2.592ns logic, 1.951ns route)
-                                       (57.0% logic, 43.0% route)
+    Total                      4.646ns (2.592ns logic, 2.055ns route)
+                                       (55.8% logic, 44.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'BUSBHS_02DP_04S'
@@ -3048,7 +3085,7 @@ Offset:              6.866ns (Levels of Logic = 12)
      LUT4_D:I0->O          1   0.195   0.523  Sreg0_FSM_FFd7-In11 (N179)
      LUT3:I2->O            1   0.195   0.741  Sreg0_FSM_FFd7-In271 (Sreg0_FSM_FFd7-In271)
      LUT4:I0->O            2   0.195   0.705  Sreg0_FSM_FFd7-In2751 (N132)
-     LUT4:I1->O            1   0.195   0.000  Sreg0_FSM_FFd7-In55_SW0_SW0_SW0_G (N206)
+     LUT4:I1->O            1   0.195   0.000  Sreg0_FSM_FFd7-In55_SW0_SW0_SW0_G (N2101)
      MUXF5:I1->O           1   0.374   0.523  Sreg0_FSM_FFd7-In55_SW0_SW0_SW0 (N971)
      LUT4_L:I3->LO         1   0.195   0.163  Sreg0_FSM_FFd7-In173 (Sreg0_FSM_FFd7-In173)
      LUT4:I3->O            1   0.195   0.000  Sreg0_FSM_FFd7-In4311 (Sreg0_FSM_FFd7-In)
@@ -3120,12 +3157,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 81.00 secs
-Total CPU time to Xst completion: 80.97 secs
+Total REAL time to Xst completion: 66.00 secs
+Total CPU time to Xst completion: 66.09 secs
  
 --> 
 
-Total memory usage is 717836 kilobytes
+Total memory usage is 660236 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  307 (   0 filtered)

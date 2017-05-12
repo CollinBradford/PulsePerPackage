@@ -71,6 +71,7 @@ begin
 				
 				if(empty = '0' and state_new_peak = '1' and new_peak = '1' and b_data_we_sig = '0') then --turn off new_peak signal and start read opperation to clear new_peak and state_new_peak
 					b_data_we_sig <= '1';
+					b_force_packet_sig <= '0';
 					state_new_peak <= '0';
 				end if;
 				
