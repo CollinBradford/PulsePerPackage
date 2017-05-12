@@ -1,0 +1,5 @@
+set -tmpdir "D:/cbradford/PulsePerPackage/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "D:/cbradford/PulsePerPackage/GEL_CAPTAN/xst"
+elaborate
+-ifn ethernet_interface.prj
+-ifmt mixed

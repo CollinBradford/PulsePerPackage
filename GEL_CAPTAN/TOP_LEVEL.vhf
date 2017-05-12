@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 04/28/2017 15:01:41
+-- /___/   /\     Timestamp : 05/12/2017 12:58:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -643,6 +643,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal b_data_we                 : std_logic;
    signal b_enable                  : std_logic;
    signal b_end_packet              : std_logic;
+   signal b_force_packet            : std_logic;
    signal clk_latch_signals         : std_logic_vector (7 downto 0);
    signal CLK_MUX                   : std_logic;
    signal CLK_187_5                 : std_logic;
@@ -1016,24 +1017,25 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
    component ethernet_interface
-      port ( reset_in   : in    std_logic; 
-             b_data_we  : in    std_logic; 
-             MASTER_CLK : in    std_logic; 
-             PHY_RX_DV  : in    std_logic; 
-             PHY_RX_ER  : in    std_logic; 
-             tx_data    : in    std_logic_vector (63 downto 0); 
-             b_data     : in    std_logic_vector (63 downto 0); 
-             PHY_RXD    : in    std_logic_vector (7 downto 0); 
-             reset_out  : out   std_logic; 
-             rx_wren    : out   std_logic; 
-             b_enable   : out   std_logic; 
-             TX_CLK     : out   std_logic; 
-             PHY_TX_EN  : out   std_logic; 
-             PHY_TX_ER  : out   std_logic; 
-             rx_addr    : out   std_logic_vector (31 downto 0); 
-             rx_data    : out   std_logic_vector (63 downto 0); 
-             PHY_TXD    : out   std_logic_vector (7 downto 0); 
-             slow_clk   : in    std_logic);
+      port ( reset_in       : in    std_logic; 
+             b_data_we      : in    std_logic; 
+             MASTER_CLK     : in    std_logic; 
+             slow_clk       : in    std_logic; 
+             PHY_RX_DV      : in    std_logic; 
+             PHY_RX_ER      : in    std_logic; 
+             tx_data        : in    std_logic_vector (63 downto 0); 
+             b_data         : in    std_logic_vector (63 downto 0); 
+             PHY_RXD        : in    std_logic_vector (7 downto 0); 
+             reset_out      : out   std_logic; 
+             rx_wren        : out   std_logic; 
+             b_enable       : out   std_logic; 
+             TX_CLK         : out   std_logic; 
+             PHY_TX_EN      : out   std_logic; 
+             PHY_TX_ER      : out   std_logic; 
+             rx_addr        : out   std_logic_vector (31 downto 0); 
+             rx_data        : out   std_logic_vector (63 downto 0); 
+             PHY_TXD        : out   std_logic_vector (7 downto 0); 
+             b_force_packet : in    std_logic);
    end component;
    
    component INV
@@ -1071,14 +1073,15 @@ architecture BEHAVIORAL of TOP_LEVEL is
    end component;
    
    component data_send
-      port ( rst        : in    std_logic; 
-             clk        : in    std_logic; 
-             empty      : in    std_logic; 
-             b_enable   : in    std_logic; 
-             din        : in    std_logic_vector (64 downto 0); 
-             delay_time : in    std_logic_vector (7 downto 0); 
-             b_data_we  : out   std_logic; 
-             b_data     : out   std_logic_vector (63 downto 0));
+      port ( rst            : in    std_logic; 
+             clk            : in    std_logic; 
+             empty          : in    std_logic; 
+             b_enable       : in    std_logic; 
+             din            : in    std_logic_vector (64 downto 0); 
+             delay_time     : in    std_logic_vector (7 downto 0); 
+             b_data_we      : out   std_logic; 
+             b_data         : out   std_logic_vector (63 downto 0); 
+             b_force_packet : out   std_logic);
    end component;
    
    component psudo_data_allOne
@@ -1860,6 +1863,7 @@ begin
    XLXI_6227 : ethernet_interface
       port map (b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we,
+                b_force_packet=>b_force_packet,
                 MASTER_CLK=>MASTER_CLK,
                 PHY_RXD(7 downto 0)=>GMII_RXD_0_sig(7 downto 0),
                 PHY_RX_DV=>GMII_RX_DV_0_sig,
@@ -1940,7 +1944,8 @@ begin
                 empty=>ethernet_fifo_empty,
                 rst=>reset,
                 b_data(63 downto 0)=>b_data(63 downto 0),
-                b_data_we=>b_data_we);
+                b_data_we=>b_data_we,
+                b_force_packet=>b_force_packet);
    
    XLXI_6291 : OBUF
       port map (I=>ethernet_overflow,

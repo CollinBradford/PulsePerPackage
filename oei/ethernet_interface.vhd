@@ -36,6 +36,7 @@ entity ethernet_interface is
 --erased for simple interface 
 		  
 		  -- burst signals
+			b_force_packet          : in    std_logic;
    		  b_data               	: in    std_logic_vector (63 downto 0); 
           b_data_we            	: in    std_logic; 												                            
           b_enable             	: out   std_logic; 				  		  															 				   
@@ -429,7 +430,7 @@ begin
 --erased for simple interface  will be commented out	
 									   
 	 user_ready <= '1';
-	 user_b_force_packet <= '0';	  
+	 user_b_force_packet <= b_force_packet;	  
 		
 	-------- end simple section -----------
 	   

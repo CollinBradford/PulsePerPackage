@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ethernet_interface">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-6-27T20:22:47</timestamp>
+    <timestamp>2017-5-12T17:55:44</timestamp>
     <pin polarity="Input" x="0" y="-544" name="reset_in" />
     <pin polarity="Input" x="0" y="-480" name="b_data_we" />
     <pin polarity="Input" x="0" y="-416" name="MASTER_CLK" />
+    <pin polarity="Input" x="0" y="32" name="slow_clk" />
     <pin polarity="Input" x="0" y="-352" name="PHY_RX_DV" />
     <pin polarity="Input" x="0" y="-288" name="PHY_RX_ER" />
     <pin polarity="Input" x="0" y="-224" name="tx_data(63:0)" />
@@ -19,12 +20,13 @@
     <pin polarity="Output" x="464" y="-160" name="rx_addr(31:0)" />
     <pin polarity="Output" x="464" y="-96" name="rx_data(63:0)" />
     <pin polarity="Output" x="464" y="-32" name="PHY_TXD(7:0)" />
-    <pin polarity="Input" x="0" y="32" name="slow_clk" />
+    <pin polarity="Input" x="0" y="96" name="b_force_packet" />
     <graph>
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="232" y="-584" type="symbol" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin reset_in" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin b_data_we" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin MASTER_CLK" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin slow_clk" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin PHY_RX_DV" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin PHY_RX_ER" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin tx_data(63:0)" />
@@ -39,7 +41,8 @@
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-160" type="pin rx_addr(31:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-96" type="pin rx_data(63:0)" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="392" y="-32" type="pin PHY_TXD(7:0)" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin slow_clk" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin b_force_packet" />
+        <line x2="0" y1="96" y2="96" x1="64" />
         <line x2="0" y1="32" y2="32" x1="64" />
         <line x2="0" y1="-544" y2="-544" x1="64" />
         <line x2="0" y1="-480" y2="-480" x1="64" />
@@ -64,6 +67,6 @@
         <line x2="464" y1="-96" y2="-96" x1="400" />
         <rect width="64" x="400" y="-44" height="24" />
         <line x2="464" y1="-32" y2="-32" x1="400" />
-        <rect width="336" x="64" y="-576" height="640" />
+        <rect width="336" x="64" y="-576" height="704" />
     </graph>
 </symbol>

@@ -631,7 +631,8 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="ethernet_interface">
-            <timestamp>2016-6-27T20:22:47</timestamp>
+            <timestamp>2017-5-12T17:55:44</timestamp>
+            <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-544" y2="-544" x1="64" />
             <line x2="0" y1="-480" y2="-480" x1="64" />
@@ -656,7 +657,7 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
             <rect width="64" x="400" y="-44" height="24" />
             <line x2="464" y1="-32" y2="-32" x1="400" />
-            <rect width="336" x="64" y="-576" height="640" />
+            <rect width="336" x="64" y="-576" height="704" />
         </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -1720,6 +1721,7 @@
             <blockpin signalname="XLXN_15140" name="reset_in" />
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="MASTER_CLK" name="MASTER_CLK" />
+            <blockpin signalname="clock_5mhz" name="slow_clk" />
             <blockpin signalname="GMII_RX_DV_0_sig" name="PHY_RX_DV" />
             <blockpin signalname="GMII_RX_ER_0_sig" name="PHY_RX_ER" />
             <blockpin signalname="tx_data(63:0)" name="tx_data(63:0)" />
@@ -1734,7 +1736,7 @@
             <blockpin signalname="rx_addr(31:0)" name="rx_addr(31:0)" />
             <blockpin signalname="rx_data(63:0)" name="rx_data(63:0)" />
             <blockpin signalname="PHY_TXD_sig(7:0)" name="PHY_TXD(7:0)" />
-            <blockpin signalname="clock_5mhz" name="slow_clk" />
+            <blockpin signalname="b_force_packet" name="b_force_packet" />
         </block>
         <block symbolname="gnd" name="XLXI_6228">
             <blockpin signalname="XLXN_15140" name="G" />
@@ -2033,77 +2035,88 @@
         </instance>
         <branch name="GMII_RXD_0_sig(7:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="1120" type="branch" />
-            <wire x2="1264" y1="1120" y2="1120" x1="832" />
+            <wire x2="848" y1="1120" y2="1120" x1="832" />
+            <wire x2="1264" y1="1120" y2="1120" x1="848" />
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1872" y="672" type="branch" />
-            <wire x2="1872" y1="672" y2="672" x1="1728" />
+            <wire x2="1856" y1="672" y2="672" x1="1728" />
+            <wire x2="1872" y1="672" y2="672" x1="1856" />
         </branch>
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="736" type="branch" />
-            <wire x2="1264" y1="736" y2="736" x1="1040" />
+            <wire x2="1056" y1="736" y2="736" x1="1040" />
+            <wire x2="1264" y1="736" y2="736" x1="1056" />
         </branch>
         <instance x="1056" y="608" name="XLXI_6228" orien="R90" />
         <branch name="XLXN_15140">
-            <wire x2="1264" y1="672" y2="672" x1="1184" />
+            <wire x2="1200" y1="672" y2="672" x1="1184" />
+            <wire x2="1264" y1="672" y2="672" x1="1200" />
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="848" y="800" type="branch" />
-            <wire x2="1264" y1="800" y2="800" x1="848" />
+            <wire x2="864" y1="800" y2="800" x1="848" />
+            <wire x2="1264" y1="800" y2="800" x1="864" />
         </branch>
         <branch name="GMII_RX_DV_0_sig">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="864" type="branch" />
-            <wire x2="1264" y1="864" y2="864" x1="832" />
+            <wire x2="848" y1="864" y2="864" x1="832" />
+            <wire x2="1264" y1="864" y2="864" x1="848" />
         </branch>
         <branch name="GMII_RX_ER_0_sig">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="928" type="branch" />
-            <wire x2="1264" y1="928" y2="928" x1="832" />
+            <wire x2="848" y1="928" y2="928" x1="832" />
+            <wire x2="1264" y1="928" y2="928" x1="848" />
         </branch>
         <branch name="b_data(63:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="1056" type="branch" />
-            <wire x2="1264" y1="1056" y2="1056" x1="1040" />
+            <wire x2="1056" y1="1056" y2="1056" x1="1040" />
+            <wire x2="1264" y1="1056" y2="1056" x1="1056" />
         </branch>
         <branch name="tx_data(63:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="992" type="branch" />
-            <wire x2="1264" y1="992" y2="992" x1="1040" />
+            <wire x2="1056" y1="992" y2="992" x1="1040" />
+            <wire x2="1264" y1="992" y2="992" x1="1056" />
         </branch>
         <branch name="b_enable">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="800" type="branch" />
-            <wire x2="1952" y1="800" y2="800" x1="1728" />
+            <wire x2="1936" y1="800" y2="800" x1="1728" />
+            <wire x2="1952" y1="800" y2="800" x1="1936" />
         </branch>
         <branch name="rx_wren">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="736" type="branch" />
-            <wire x2="1952" y1="736" y2="736" x1="1728" />
+            <wire x2="1936" y1="736" y2="736" x1="1728" />
+            <wire x2="1952" y1="736" y2="736" x1="1936" />
         </branch>
         <branch name="GTX_CLK_0_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="864" type="branch" />
-            <wire x2="2112" y1="864" y2="864" x1="1728" />
+            <wire x2="2096" y1="864" y2="864" x1="1728" />
+            <wire x2="2112" y1="864" y2="864" x1="2096" />
         </branch>
         <branch name="PHY_TXEN_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="928" type="branch" />
-            <wire x2="2112" y1="928" y2="928" x1="1728" />
+            <wire x2="2096" y1="928" y2="928" x1="1728" />
+            <wire x2="2112" y1="928" y2="928" x1="2096" />
         </branch>
         <branch name="PHY_TXER_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="992" type="branch" />
-            <wire x2="2112" y1="992" y2="992" x1="1728" />
+            <wire x2="2096" y1="992" y2="992" x1="1728" />
+            <wire x2="2112" y1="992" y2="992" x1="2096" />
         </branch>
         <branch name="PHY_TXD_sig(7:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="1184" type="branch" />
-            <wire x2="2112" y1="1184" y2="1184" x1="1728" />
+            <wire x2="2096" y1="1184" y2="1184" x1="1728" />
+            <wire x2="2112" y1="1184" y2="1184" x1="2096" />
         </branch>
         <branch name="rx_data(63:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="1120" type="branch" />
-            <wire x2="1952" y1="1120" y2="1120" x1="1728" />
+            <wire x2="1936" y1="1120" y2="1120" x1="1728" />
+            <wire x2="1952" y1="1120" y2="1120" x1="1936" />
         </branch>
         <branch name="rx_addr(31:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="1056" type="branch" />
-            <wire x2="1952" y1="1056" y2="1056" x1="1728" />
-        </branch>
-        <branch name="clock_5mhz">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1392" y="1344" type="branch" />
-            <wire x2="1264" y1="1248" y2="1248" x1="928" />
-            <wire x2="928" y1="1248" y2="1344" x1="928" />
-            <wire x2="1392" y1="1344" y2="1344" x1="928" />
+            <wire x2="1936" y1="1056" y2="1056" x1="1728" />
+            <wire x2="1952" y1="1056" y2="1056" x1="1936" />
         </branch>
         <branch name="TRIG_ATTRIBUTES_MAP">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3104" type="branch" />
@@ -2116,6 +2129,14 @@
         <branch name="psudo_data_select_map">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3296" type="branch" />
             <wire x2="4672" y1="3296" y2="3296" x1="4512" />
+        </branch>
+        <branch name="clock_5mhz">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1248" type="branch" />
+            <wire x2="1264" y1="1248" y2="1248" x1="1040" />
+        </branch>
+        <branch name="b_force_packet">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="1312" type="branch" />
+            <wire x2="1264" y1="1312" y2="1312" x1="1040" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
