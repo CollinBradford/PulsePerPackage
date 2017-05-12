@@ -42,6 +42,7 @@ signal new_peak : std_logic;
 signal state_new_peak : std_logic;
 signal b_force_packet_sig : std_logic;
 signal b_data_we_sig : std_logic;
+signal state_new_peak_over : std_logic;
 
 begin
 
@@ -61,10 +62,11 @@ begin
 					if(count_delay >= delay_time_u) then
 						count_delay <= (others => '0');
 						b_data_we_sig <= '1';
+						state_new_peak_over <= '0';
 					end if;
 				end if;
 				
-				if(empty = '0' and state_new_peak = '0' and new_peak = '1') then --start of new_peak
+				if(empty = '0' and state_new_peak = '0' and new_peak = '1' and state_new_peak_over = '0') then --start of new_peak
 					b_force_packet_sig <= '1';
 					state_new_peak <= '1';
 				end if;
@@ -73,6 +75,7 @@ begin
 					b_data_we_sig <= '1';
 					b_force_packet_sig <= '0';
 					state_new_peak <= '0';
+					state_new_peak_over <= '1';
 				end if;
 				
 			else--reset code here
@@ -80,6 +83,7 @@ begin
 				count_delay <= (others => '0');
 				b_force_packet_sig <= '0';
 				b_data_we_sig <= '0';
+				state_new_peak_over <= '0';
 			end if;
 		end if;
 	end process;
