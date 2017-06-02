@@ -1341,7 +1341,7 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX_CTRL_MAC_FIFO</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_10_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_10_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
 </msg>
 
 </messages>

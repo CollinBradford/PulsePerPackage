@@ -55,7 +55,7 @@ begin
 		if(rising_edge(clk)) then
 			if(rst = '0') then
 			
-				if(empty = '0' and new_peak = '0') then  --middle of normal read operation
+				if(empty = '0' and (new_peak = '0' or state_new_peak_over = '1')) then  --middle of normal read operation
 					state_new_peak <= '0';
 					b_data_we_sig <= '0';
 					count_delay <= count_delay + 1;

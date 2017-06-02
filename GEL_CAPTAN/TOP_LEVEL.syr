@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -2678,7 +2678,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5968
+# BELS                             : 5967
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2690,15 +2690,15 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 180
 #      LUT1                        : 237
-#      LUT2                        : 550
+#      LUT2                        : 549
 #      LUT2_D                      : 34
 #      LUT2_L                      : 28
 #      LUT3                        : 1068
-#      LUT3_D                      : 29
+#      LUT3_D                      : 28
 #      LUT3_L                      : 64
-#      LUT4                        : 1903
-#      LUT4_D                      : 76
-#      LUT4_L                      : 246
+#      LUT4                        : 1905
+#      LUT4_D                      : 77
+#      LUT4_L                      : 244
 #      MUXCY                       : 860
 #      MUXF5                       : 144
 #      MUXF6                       : 40
@@ -2745,10 +2745,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3119  out of  10752    29%  
+ Number of Slices:                     3122  out of  10752    29%  
  Number of Slice Flip Flops:           2397  out of  21504    11%  
- Number of 4 input LUTs:               4823  out of  21504    22%  
-    Number used as logic:              4415
+ Number of 4 input LUTs:               4822  out of  21504    22%  
+    Number used as logic:              4414
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2916,7 +2916,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 103760 / 7201
+  Total number of paths / destination ports: 103592 / 7201
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3120,12 +3120,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 66.00 secs
-Total CPU time to Xst completion: 65.90 secs
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 64.49 secs
  
 --> 
 
-Total memory usage is 717580 kilobytes
+Total memory usage is 721532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  308 (   0 filtered)
