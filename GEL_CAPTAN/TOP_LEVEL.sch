@@ -276,7 +276,7 @@
         <signal name="XLXN_15532" />
         <signal name="XLXN_15533" />
         <signal name="fadc_fifo_data_out(15:0)" />
-        <signal name="ethernet_fifo_din(63:0)" />
+        <signal name="delay_in(63:0)" />
         <signal name="XLXN_15547" />
         <signal name="newpeak_testpoint" />
         <signal name="ethernet_fifo_din(64)" />
@@ -293,6 +293,41 @@
         <signal name="ethernet_fifo_din(64:0)" />
         <signal name="ethernet_fifo_dout(64:0)" />
         <signal name="b_force_packet" />
+        <signal name="XLXN_15558" />
+        <signal name="XLXN_15563" />
+        <signal name="XLXN_15564" />
+        <signal name="XLXN_15566" />
+        <signal name="XLXN_15567" />
+        <signal name="XLXN_15568" />
+        <signal name="XLXN_15569" />
+        <signal name="XLXN_15565" />
+        <signal name="XLXN_15570" />
+        <signal name="XLXN_15571" />
+        <signal name="XLXN_15572" />
+        <signal name="XLXN_15573" />
+        <signal name="XLXN_15574" />
+        <signal name="XLXN_15576" />
+        <signal name="XLXN_15577" />
+        <signal name="XLXN_15578" />
+        <signal name="XLXN_15579" />
+        <signal name="XLXN_15580" />
+        <signal name="XLXN_15581" />
+        <signal name="delay_in(63:48)" />
+        <signal name="delay_in(47:32)" />
+        <signal name="delay_in(31:16)" />
+        <signal name="delay_in(15:0)" />
+        <signal name="XLXN_15587(15:0)" />
+        <signal name="XLXN_15588(15:0)" />
+        <signal name="XLXN_15590(15:0)" />
+        <signal name="XLXN_15591(15:0)" />
+        <signal name="XLXN_15592(15:0)" />
+        <signal name="XLXN_15593(15:0)" />
+        <signal name="XLXN_15594(15:0)" />
+        <signal name="XLXN_15595(15:0)" />
+        <signal name="ethernet_fifo_din(15:0)" />
+        <signal name="ethernet_fifo_din(31:16)" />
+        <signal name="ethernet_fifo_din(47:32)" />
+        <signal name="ethernet_fifo_din(63:48)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -805,6 +840,21 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-128" height="512" />
+        </blockdef>
+        <blockdef name="fd16ce">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+            <rect width="64" x="320" y="-268" height="24" />
+            <rect width="64" x="0" y="-268" height="24" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1914,7 +1964,7 @@
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
-            <blockpin signalname="ethernet_fifo_din(63:0)" name="data_out(63:0)" />
+            <blockpin signalname="delay_in(63:0)" name="data_out(63:0)" />
             <blockpin signalname="newpeak_testpoint" name="new_peak" />
         </block>
         <block symbolname="gnd" name="XLXI_6351">
@@ -1943,6 +1993,93 @@
             <blockpin signalname="rx_data(2)" name="D" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="pusdo_data_select(2)" name="Q" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6355">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15587(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15592(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6356">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15588(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15593(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6357">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15590(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15594(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6358">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin name="CLR" />
+            <blockpin signalname="XLXN_15591(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15595(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6359">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="delay_in(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15587(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6360">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="delay_in(31:16)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15588(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6361">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="delay_in(47:32)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15590(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6362">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="delay_in(63:48)" name="D(15:0)" />
+            <blockpin signalname="XLXN_15591(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6363">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15592(15:0)" name="D(15:0)" />
+            <blockpin signalname="ethernet_fifo_din(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6364">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15593(15:0)" name="D(15:0)" />
+            <blockpin signalname="ethernet_fifo_din(31:16)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6365">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15594(15:0)" name="D(15:0)" />
+            <blockpin signalname="ethernet_fifo_din(47:32)" name="Q(15:0)" />
+        </block>
+        <block symbolname="fd16ce" name="XLXI_6366">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="XLXN_15565" name="CE" />
+            <blockpin signalname="reset" name="CLR" />
+            <blockpin signalname="XLXN_15595(15:0)" name="D(15:0)" />
+            <blockpin signalname="ethernet_fifo_din(63:48)" name="Q(15:0)" />
+        </block>
+        <block symbolname="vcc" name="XLXI_6368">
+            <blockpin signalname="XLXN_15565" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2320,7 +2457,8 @@
         <instance x="288" y="4624" name="XLXI_6299" orien="R0" />
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5856" y="576" type="branch" />
-            <wire x2="5856" y1="576" y2="576" x1="5808" />
+            <wire x2="5840" y1="576" y2="576" x1="5808" />
+            <wire x2="5856" y1="576" y2="576" x1="5840" />
         </branch>
         <instance x="6400" y="784" name="XLXI_6253" orien="R0">
         </instance>
@@ -2346,15 +2484,18 @@
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5856" y="512" type="branch" />
-            <wire x2="5856" y1="512" y2="512" x1="5808" />
+            <wire x2="5840" y1="512" y2="512" x1="5808" />
+            <wire x2="5856" y1="512" y2="512" x1="5840" />
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="384" type="branch" />
-            <wire x2="4976" y1="384" y2="384" x1="4944" />
+            <wire x2="4960" y1="384" y2="384" x1="4944" />
+            <wire x2="4976" y1="384" y2="384" x1="4960" />
         </branch>
         <branch name="ethernet_fifo_dout(64:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5872" y="544" type="branch" />
-            <wire x2="5872" y1="544" y2="544" x1="5808" />
+            <wire x2="5856" y1="544" y2="544" x1="5808" />
+            <wire x2="5872" y1="544" y2="544" x1="5856" />
         </branch>
         <branch name="ethernet_fifo_dout(64:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6352" y="752" type="branch" />
@@ -2368,11 +2509,13 @@
         </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
-            <wire x2="4976" y1="480" y2="480" x1="4944" />
+            <wire x2="4960" y1="480" y2="480" x1="4944" />
+            <wire x2="4976" y1="480" y2="480" x1="4960" />
         </branch>
         <branch name="ethernet_fifo_din(64:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="512" type="branch" />
-            <wire x2="4976" y1="512" y2="512" x1="4944" />
+            <wire x2="4960" y1="512" y2="512" x1="4944" />
+            <wire x2="4976" y1="512" y2="512" x1="4960" />
         </branch>
         <instance x="4528" y="1040" name="XLXI_6291" orien="R0" />
         <branch name="ethernet_overflow">
@@ -2382,7 +2525,8 @@
         </branch>
         <branch name="ethernet_fifo_empty">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="768" type="branch" />
-            <wire x2="5840" y1="768" y2="768" x1="5808" />
+            <wire x2="5824" y1="768" y2="768" x1="5808" />
+            <wire x2="5840" y1="768" y2="768" x1="5824" />
         </branch>
         <branch name="ethernet_fifo_empty">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6384" y="560" type="branch" />
@@ -2622,7 +2766,8 @@
         <instance x="6016" y="992" name="XLXI_6339" orien="R0" />
         <branch name="EbufValid">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="864" type="branch" />
-            <wire x2="5840" y1="864" y2="864" x1="5808" />
+            <wire x2="5824" y1="864" y2="864" x1="5808" />
+            <wire x2="5840" y1="864" y2="864" x1="5824" />
         </branch>
         <branch name="EbufValid">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5968" y="960" type="branch" />
@@ -2632,11 +2777,13 @@
         </instance>
         <branch name="FADC_DCLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="832" type="branch" />
-            <wire x2="2336" y1="832" y2="832" x1="2304" />
+            <wire x2="2320" y1="832" y2="832" x1="2304" />
+            <wire x2="2336" y1="832" y2="832" x1="2320" />
         </branch>
         <branch name="fadc_data_in(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="864" type="branch" />
-            <wire x2="2336" y1="864" y2="864" x1="2304" />
+            <wire x2="2320" y1="864" y2="864" x1="2304" />
+            <wire x2="2336" y1="864" y2="864" x1="2320" />
         </branch>
         <branch name="XLXN_15524">
             <wire x2="2336" y1="1088" y2="1088" x1="2304" />
@@ -2657,7 +2804,8 @@
             <wire x2="3232" y1="928" y2="928" x1="3184" />
             <wire x2="3232" y1="928" y2="1168" x1="3232" />
             <wire x2="3280" y1="1168" y2="1168" x1="3232" />
-            <wire x2="3280" y1="1088" y2="1168" x1="3280" />
+            <wire x2="3280" y1="1088" y2="1104" x1="3280" />
+            <wire x2="3280" y1="1104" y2="1168" x1="3280" />
         </branch>
         <branch name="XLXN_15531">
             <wire x2="3184" y1="1120" y2="1120" x1="3168" />
@@ -2675,7 +2823,8 @@
         <instance x="3216" y="1088" name="XLXI_6346" orien="R0" />
         <branch name="ethernet_fifo_in_en">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="544" type="branch" />
-            <wire x2="4976" y1="544" y2="544" x1="4944" />
+            <wire x2="4960" y1="544" y2="544" x1="4944" />
+            <wire x2="4976" y1="544" y2="544" x1="4960" />
         </branch>
         <instance x="3664" y="1696" name="XLXI_6349" orien="R0">
         </instance>
@@ -2699,7 +2848,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3648" y="1792" type="branch" />
             <wire x2="3664" y1="1792" y2="1792" x1="3648" />
         </branch>
-        <branch name="ethernet_fifo_din(63:0)">
+        <branch name="delay_in(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4208" y="1664" type="branch" />
             <wire x2="4208" y1="1664" y2="1664" x1="4192" />
         </branch>
@@ -2787,6 +2936,193 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6800" y="880" type="branch" />
             <wire x2="6800" y1="880" y2="880" x1="6784" />
         </branch>
+        <instance x="3920" y="2976" name="XLXI_6355" orien="R0" />
+        <instance x="3920" y="3392" name="XLXI_6356" orien="R0" />
+        <instance x="3920" y="3792" name="XLXI_6357" orien="R0" />
+        <instance x="3904" y="4208" name="XLXI_6358" orien="R0" />
+        <instance x="3392" y="2976" name="XLXI_6359" orien="R0" />
+        <instance x="3440" y="3392" name="XLXI_6360" orien="R0" />
+        <instance x="3456" y="3792" name="XLXI_6361" orien="R0" />
+        <instance x="3456" y="4208" name="XLXI_6362" orien="R0" />
+        <instance x="4432" y="2960" name="XLXI_6363" orien="R0" />
+        <instance x="4400" y="3392" name="XLXI_6364" orien="R0" />
+        <instance x="4384" y="3808" name="XLXI_6365" orien="R0" />
+        <instance x="4384" y="4256" name="XLXI_6366" orien="R0" />
+        <branch name="XLXN_15565">
+            <wire x2="3392" y1="2784" y2="2784" x1="3376" />
+            <wire x2="3376" y1="2784" y2="3200" x1="3376" />
+            <wire x2="3424" y1="3200" y2="3200" x1="3376" />
+            <wire x2="3440" y1="3200" y2="3200" x1="3424" />
+            <wire x2="3424" y1="3200" y2="3600" x1="3424" />
+            <wire x2="3440" y1="3600" y2="3600" x1="3424" />
+            <wire x2="3456" y1="3600" y2="3600" x1="3440" />
+            <wire x2="3440" y1="3600" y2="4016" x1="3440" />
+            <wire x2="3456" y1="4016" y2="4016" x1="3440" />
+            <wire x2="3440" y1="4016" y2="4256" x1="3440" />
+            <wire x2="3536" y1="4256" y2="4256" x1="3440" />
+            <wire x2="3856" y1="4256" y2="4256" x1="3536" />
+            <wire x2="4368" y1="4256" y2="4256" x1="3856" />
+            <wire x2="3536" y1="4256" y2="4320" x1="3536" />
+            <wire x2="3504" y1="4320" y2="4320" x1="3488" />
+            <wire x2="3536" y1="4320" y2="4320" x1="3504" />
+            <wire x2="3888" y1="4016" y2="4016" x1="3856" />
+            <wire x2="3904" y1="4016" y2="4016" x1="3888" />
+            <wire x2="3856" y1="4016" y2="4256" x1="3856" />
+            <wire x2="3904" y1="3600" y2="3600" x1="3888" />
+            <wire x2="3920" y1="3600" y2="3600" x1="3904" />
+            <wire x2="3888" y1="3600" y2="4016" x1="3888" />
+            <wire x2="3920" y1="2784" y2="2784" x1="3904" />
+            <wire x2="3904" y1="2784" y2="3200" x1="3904" />
+            <wire x2="3920" y1="3200" y2="3200" x1="3904" />
+            <wire x2="3904" y1="3200" y2="3600" x1="3904" />
+            <wire x2="4432" y1="2768" y2="2768" x1="4368" />
+            <wire x2="4368" y1="2768" y2="3200" x1="4368" />
+            <wire x2="4400" y1="3200" y2="3200" x1="4368" />
+            <wire x2="4368" y1="3200" y2="3616" x1="4368" />
+            <wire x2="4384" y1="3616" y2="3616" x1="4368" />
+            <wire x2="4368" y1="3616" y2="4064" x1="4368" />
+            <wire x2="4384" y1="4064" y2="4064" x1="4368" />
+            <wire x2="4368" y1="4064" y2="4256" x1="4368" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3760" y="4320" type="branch" />
+            <wire x2="3392" y1="2848" y2="2848" x1="3360" />
+            <wire x2="3360" y1="2848" y2="3264" x1="3360" />
+            <wire x2="3440" y1="3264" y2="3264" x1="3360" />
+            <wire x2="3360" y1="3264" y2="3664" x1="3360" />
+            <wire x2="3456" y1="3664" y2="3664" x1="3360" />
+            <wire x2="3360" y1="3664" y2="4080" x1="3360" />
+            <wire x2="3456" y1="4080" y2="4080" x1="3360" />
+            <wire x2="3360" y1="4080" y2="4240" x1="3360" />
+            <wire x2="3792" y1="4240" y2="4240" x1="3360" />
+            <wire x2="3872" y1="4240" y2="4240" x1="3792" />
+            <wire x2="4352" y1="4240" y2="4240" x1="3872" />
+            <wire x2="3792" y1="4240" y2="4320" x1="3792" />
+            <wire x2="3792" y1="4320" y2="4320" x1="3760" />
+            <wire x2="3888" y1="3264" y2="3264" x1="3872" />
+            <wire x2="3920" y1="3264" y2="3264" x1="3888" />
+            <wire x2="3872" y1="3264" y2="3664" x1="3872" />
+            <wire x2="3920" y1="3664" y2="3664" x1="3872" />
+            <wire x2="3872" y1="3664" y2="4080" x1="3872" />
+            <wire x2="3904" y1="4080" y2="4080" x1="3872" />
+            <wire x2="3872" y1="4080" y2="4240" x1="3872" />
+            <wire x2="3920" y1="2848" y2="2848" x1="3888" />
+            <wire x2="3888" y1="2848" y2="3264" x1="3888" />
+            <wire x2="4352" y1="2832" y2="3264" x1="4352" />
+            <wire x2="4400" y1="3264" y2="3264" x1="4352" />
+            <wire x2="4352" y1="3264" y2="3680" x1="4352" />
+            <wire x2="4384" y1="3680" y2="3680" x1="4352" />
+            <wire x2="4352" y1="3680" y2="4128" x1="4352" />
+            <wire x2="4352" y1="4128" y2="4240" x1="4352" />
+            <wire x2="4384" y1="4128" y2="4128" x1="4352" />
+            <wire x2="4432" y1="2832" y2="2832" x1="4352" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4224" y="4320" type="branch" />
+            <wire x2="3392" y1="2944" y2="2944" x1="3344" />
+            <wire x2="3344" y1="2944" y2="3360" x1="3344" />
+            <wire x2="3344" y1="3360" y2="3760" x1="3344" />
+            <wire x2="3456" y1="3760" y2="3760" x1="3344" />
+            <wire x2="3344" y1="3760" y2="4176" x1="3344" />
+            <wire x2="3456" y1="4176" y2="4176" x1="3344" />
+            <wire x2="3344" y1="4176" y2="4224" x1="3344" />
+            <wire x2="3840" y1="4224" y2="4224" x1="3344" />
+            <wire x2="4288" y1="4224" y2="4224" x1="3840" />
+            <wire x2="4288" y1="4224" y2="4320" x1="4288" />
+            <wire x2="4304" y1="4224" y2="4224" x1="4288" />
+            <wire x2="4384" y1="4224" y2="4224" x1="4304" />
+            <wire x2="3392" y1="3360" y2="3360" x1="3344" />
+            <wire x2="3440" y1="3360" y2="3360" x1="3392" />
+            <wire x2="3376" y1="3456" y2="3808" x1="3376" />
+            <wire x2="3376" y1="3808" y2="4208" x1="3376" />
+            <wire x2="3840" y1="4208" y2="4208" x1="3376" />
+            <wire x2="3840" y1="4208" y2="4224" x1="3840" />
+            <wire x2="3920" y1="3808" y2="3808" x1="3376" />
+            <wire x2="3392" y1="3456" y2="3456" x1="3376" />
+            <wire x2="3920" y1="3456" y2="3456" x1="3392" />
+            <wire x2="3392" y1="3008" y2="3456" x1="3392" />
+            <wire x2="3840" y1="3008" y2="3008" x1="3392" />
+            <wire x2="3840" y1="2944" y2="3008" x1="3840" />
+            <wire x2="3920" y1="2944" y2="2944" x1="3840" />
+            <wire x2="3920" y1="3360" y2="3456" x1="3920" />
+            <wire x2="3920" y1="3760" y2="3808" x1="3920" />
+            <wire x2="4288" y1="4320" y2="4320" x1="4224" />
+            <wire x2="4304" y1="3872" y2="4224" x1="4304" />
+            <wire x2="4320" y1="3872" y2="3872" x1="4304" />
+            <wire x2="4336" y1="3872" y2="3872" x1="4320" />
+            <wire x2="4384" y1="3872" y2="3872" x1="4336" />
+            <wire x2="4432" y1="2928" y2="2928" x1="4336" />
+            <wire x2="4336" y1="2928" y2="3360" x1="4336" />
+            <wire x2="4400" y1="3360" y2="3360" x1="4336" />
+            <wire x2="4336" y1="3360" y2="3872" x1="4336" />
+            <wire x2="4384" y1="3776" y2="3872" x1="4384" />
+        </branch>
+        <branch name="delay_in(63:48)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3312" y="3952" type="branch" />
+            <wire x2="3456" y1="3952" y2="3952" x1="3312" />
+        </branch>
+        <branch name="delay_in(47:32)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3312" y="3536" type="branch" />
+            <wire x2="3456" y1="3536" y2="3536" x1="3312" />
+        </branch>
+        <branch name="delay_in(31:16)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3312" y="3136" type="branch" />
+            <wire x2="3328" y1="3136" y2="3136" x1="3312" />
+            <wire x2="3440" y1="3136" y2="3136" x1="3328" />
+        </branch>
+        <branch name="delay_in(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3312" y="2720" type="branch" />
+            <wire x2="3392" y1="2720" y2="2720" x1="3312" />
+        </branch>
+        <branch name="XLXN_15587(15:0)">
+            <wire x2="3920" y1="2720" y2="2720" x1="3776" />
+        </branch>
+        <branch name="XLXN_15588(15:0)">
+            <wire x2="3920" y1="3136" y2="3136" x1="3824" />
+        </branch>
+        <branch name="XLXN_15590(15:0)">
+            <wire x2="3920" y1="3536" y2="3536" x1="3840" />
+        </branch>
+        <branch name="XLXN_15591(15:0)">
+            <wire x2="3904" y1="3952" y2="3952" x1="3840" />
+        </branch>
+        <branch name="XLXN_15592(15:0)">
+            <wire x2="4368" y1="2720" y2="2720" x1="4304" />
+            <wire x2="4368" y1="2704" y2="2720" x1="4368" />
+            <wire x2="4432" y1="2704" y2="2704" x1="4368" />
+        </branch>
+        <branch name="XLXN_15593(15:0)">
+            <wire x2="4400" y1="3136" y2="3136" x1="4304" />
+        </branch>
+        <branch name="XLXN_15594(15:0)">
+            <wire x2="4320" y1="3536" y2="3536" x1="4304" />
+            <wire x2="4320" y1="3536" y2="3552" x1="4320" />
+            <wire x2="4384" y1="3552" y2="3552" x1="4320" />
+        </branch>
+        <branch name="XLXN_15595(15:0)">
+            <wire x2="4336" y1="3952" y2="3952" x1="4288" />
+            <wire x2="4336" y1="3952" y2="4000" x1="4336" />
+            <wire x2="4384" y1="4000" y2="4000" x1="4336" />
+        </branch>
+        <instance x="3504" y="4384" name="XLXI_6368" orien="R270" />
+        <branch name="ethernet_fifo_din(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4864" y="2704" type="branch" />
+            <wire x2="4864" y1="2704" y2="2704" x1="4816" />
+        </branch>
+        <branch name="ethernet_fifo_din(31:16)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4832" y="3136" type="branch" />
+            <wire x2="4832" y1="3136" y2="3136" x1="4784" />
+        </branch>
+        <branch name="ethernet_fifo_din(47:32)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4864" y="3552" type="branch" />
+            <wire x2="4864" y1="3552" y2="3552" x1="4768" />
+        </branch>
+        <branch name="ethernet_fifo_din(63:48)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4880" y="4000" type="branch" />
+            <wire x2="4880" y1="4000" y2="4000" x1="4768" />
+        </branch>
+        <text style="fontsize:20;fontname:Arial" x="2848" y="2548">Ah, I am sure there is a much better way to do this, but I needed a quick way to do some pre-trigger sampliing.  This should delay the signal 3 clocks so that when the sample size is set to anything above 3, it willl give a decient look at the signal.  </text>
+        <rect width="2524" x="2812" y="2500" height="1936" />
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

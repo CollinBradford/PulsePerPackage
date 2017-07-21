@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -179,8 +179,7 @@ Architecture behavioral of Entity pulser is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd" in Library work.
 Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/psudo_data_allOne.vhd" in Library work.
 Architecture behavioral of Entity psudo_data_allone is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/ClockLatchSignals.vhd" in Library work.
@@ -192,11 +191,18 @@ Architecture behavioral of Entity peakfinder is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/PsudoCounter.vhd" in Library work.
 Architecture behavioral of Entity psudocounter is up to date.
 Compiling vhdl file "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Entity <FD16CE_MXILINX_TOP_LEVEL> compiled.
+Entity <FD16CE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Entity <fd8re_mxilinx_top_level> compiled.
+Entity <fd8re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -239,6 +245,8 @@ Analyzing hierarchy for entity <ClockLatchSignals> in library <work> (architectu
 Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <PsudoCounter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD16CE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -313,13 +321,13 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1251: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1425: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -459,7 +467,7 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "DRIVE =  12" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_5999> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  FAST" for instance <XLXI_5999> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1525: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1699: Unconnected output port 'O' of component 'M2_1_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_6004_1" for instance <XLXI_6004> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6016> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6025> in unit <TOP_LEVEL>.
@@ -595,8 +603,8 @@ WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1919: Unconnected output port 'full' of component 'ethernet_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 1919: Instantiating black box module <ethernet_FIFO>.
+WARNING:Xst:753 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2093: Unconnected output port 'full' of component 'ethernet_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2093: Instantiating black box module <ethernet_FIFO>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6291> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6291> in unit <TOP_LEVEL>.
@@ -614,7 +622,19 @@ WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 
     Set user-defined property "DRIVE =  12" for instance <XLXI_6339> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6339> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6339> in unit <TOP_LEVEL>.
-WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2038: Instantiating black box module <ADC_FIFO>.
+WARNING:Xst:2211 - "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf" line 2212: Instantiating black box module <ADC_FIFO>.
+    Set user-defined property "HU_SET =  XLXI_6355_12" for instance <XLXI_6355> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6356_13" for instance <XLXI_6356> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6357_14" for instance <XLXI_6357> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6358_15" for instance <XLXI_6358> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6359_16" for instance <XLXI_6359> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6360_17" for instance <XLXI_6360> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6361_18" for instance <XLXI_6361> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6362_19" for instance <XLXI_6362> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6363_20" for instance <XLXI_6363> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6364_21" for instance <XLXI_6364> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6365_22" for instance <XLXI_6365> in unit <TOP_LEVEL>.
+    Set user-defined property "HU_SET =  XLXI_6366_23" for instance <XLXI_6366> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -807,6 +827,25 @@ Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
 Analyzing Entity <PsudoCounter> in library <work> (Architecture <behavioral>).
 Entity <PsudoCounter> analyzed. Unit <PsudoCounter> generated.
+
+Analyzing Entity <FD16CE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16CE_MXILINX_TOP_LEVEL>.
+Entity <FD16CE_MXILINX_TOP_LEVEL> analyzed. Unit <FD16CE_MXILINX_TOP_LEVEL> generated.
 
 
 =========================================================================
@@ -1592,6 +1631,11 @@ Synthesizing Unit <FD8RE_MXILINX_TOP_LEVEL>.
 Unit <FD8RE_MXILINX_TOP_LEVEL> synthesized.
 
 
+Synthesizing Unit <FD16CE_MXILINX_TOP_LEVEL>.
+    Related source file is "D:/cbradford/PulsePerPackage/GEL_CAPTAN/TOP_LEVEL.vhf".
+Unit <FD16CE_MXILINX_TOP_LEVEL> synthesized.
+
+
 Synthesizing Unit <data_manager>.
     Related source file is "D:/cbradford/PulsePerPackage/oei/data_manager.vhd".
 WARNING:Xst:1780 - Signal <tx_data_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1726,6 +1770,7 @@ WARNING:Xst:653 - Signal <XLXN_15483> is used but never assigned. This sourceles
 WARNING:Xst:653 - Signal <XLXN_15481> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXN_15480> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXN_15479> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
+WARNING:Xst:653 - Signal <XLXI_6358_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_5338_in7_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in6_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
 WARNING:Xst:653 - Signal <XLXI_5338_in5_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
@@ -2222,8 +2267,8 @@ Macro Statistics
  5-bit down counter                                    : 1
  5-bit up counter                                      : 1
  8-bit up counter                                      : 3
-# Registers                                            : 1985
- Flip-Flops                                            : 1985
+# Registers                                            : 2177
+ Flip-Flops                                            : 2177
 # Latches                                              : 5
  1-bit latch                                           : 2
  3-bit latch                                           : 1
@@ -2378,6 +2423,8 @@ Optimizing unit <FD16RE_MXILINX_TOP_LEVEL> ...
 
 Optimizing unit <FD8RE_MXILINX_TOP_LEVEL> ...
 
+Optimizing unit <FD16CE_MXILINX_TOP_LEVEL> ...
+
 Optimizing unit <ClockLatchSignals> ...
 
 Optimizing unit <data_manager> ...
@@ -2516,7 +2563,7 @@ WARNING:Xst:2677 - Node <udp_data_count_10> of sequential type is unconnected in
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 32.
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 33.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <XLXI_6248> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
@@ -2646,8 +2693,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1644
- Flip-Flops                                            : 1644
+# Registers                                            : 1836
+ Flip-Flops                                            : 1836
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2690,15 +2737,15 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 180
 #      LUT1                        : 237
-#      LUT2                        : 549
-#      LUT2_D                      : 34
-#      LUT2_L                      : 28
-#      LUT3                        : 1068
-#      LUT3_D                      : 28
-#      LUT3_L                      : 64
-#      LUT4                        : 1905
-#      LUT4_D                      : 77
-#      LUT4_L                      : 244
+#      LUT2                        : 560
+#      LUT2_D                      : 27
+#      LUT2_L                      : 24
+#      LUT3                        : 1099
+#      LUT3_D                      : 20
+#      LUT3_L                      : 41
+#      LUT4                        : 1943
+#      LUT4_D                      : 57
+#      LUT4_L                      : 226
 #      MUXCY                       : 860
 #      MUXF5                       : 144
 #      MUXF6                       : 40
@@ -2706,10 +2753,10 @@ Cell Usage :
 #      VCC                         : 26
 #      XOR2                        : 2
 #      XORCY                       : 419
-# FlipFlops/Latches                : 2397
+# FlipFlops/Latches                : 2589
 #      FD                          : 124
 #      FDC                         : 140
-#      FDCE                        : 143
+#      FDCE                        : 335
 #      FDE                         : 504
 #      FDP                         : 30
 #      FDPE                        : 11
@@ -2745,8 +2792,8 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3122  out of  10752    29%  
- Number of Slice Flip Flops:           2397  out of  21504    11%  
+ Number of Slices:                     3233  out of  10752    30%  
+ Number of Slice Flip Flops:           2589  out of  21504    12%  
  Number of 4 input LUTs:               4822  out of  21504    22%  
     Number used as logic:              4414
     Number used as Shift registers:      24
@@ -2779,7 +2826,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-GEL_RXCLK                          | IBUFG+BUFG             | 2543  |
+GEL_RXCLK                          | IBUFG+BUFG             | 2735  |
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 69    |
 SECONDARY_CLK                      | IBUFG                  | 18    |
 -----------------------------------+------------------------+-------+
@@ -2789,6 +2836,7 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                                                                     | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+XLXI_6227/reset_mgr/reset(XLXI_6227/reset_mgr/reset:Q)                                                                                             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                                                                                                       | 182   |
 XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
 XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
 XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
@@ -2800,8 +2848,8 @@ XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_
 XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
 XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
 XLXI_6341/N0(XLXI_6341/XST_GND:G)                                                                                                                  | NONE(XLXI_6341/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0)                                                                                                   | 18    |
+XLXN_15547(XLXI_6351:G)                                                                                                                            | NONE(XLXI_6358/I_Q0)                                                                                                                                                                                | 16    |
 XLXI_6248/N0(XLXI_6248/XST_GND:G)                                                                                                                  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 8     |
-XLXI_6227/reset_mgr/reset(XLXI_6227/reset_mgr/reset:Q)                                                                                             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                                                                                                       | 6     |
 XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                       | 3     |
 XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)                                                                                          | 2     |
 XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                       | 2     |
@@ -2811,9 +2859,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.850ns (Maximum Frequency: 127.386MHz)
+   Minimum period: 8.538ns (Maximum Frequency: 117.119MHz)
    Minimum input arrival time before clock: 6.648ns
-   Maximum output required time after clock: 6.491ns
+   Maximum output required time after clock: 7.179ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2864,10 +2912,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.850ns (frequency: 127.386MHz)
+  Clock period: 8.538ns (frequency: 117.119MHz)
   Total number of paths / destination ports: 2017 / 1747
 -------------------------------------------------------------------------
-Offset:              7.850ns (Levels of Logic = 5)
+Offset:              8.538ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2877,7 +2925,7 @@ Offset:              7.850ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            167   0.360   1.456  reset (reset)
+     FDS:C->Q            343   0.360   2.144  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            488   0.358   2.874  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2887,8 +2935,8 @@ Offset:              7.850ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.850ns (1.648ns logic, 6.202ns route)
-                                       (21.0% logic, 79.0% route)
+    Total                      8.538ns (1.648ns logic, 6.890ns route)
+                                       (19.3% logic, 80.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2916,7 +2964,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.302ns (frequency: 136.947MHz)
-  Total number of paths / destination ports: 103592 / 7201
+  Total number of paths / destination ports: 103784 / 7393
 -------------------------------------------------------------------------
 Delay:               7.302ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3081,7 +3129,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.491ns (Levels of Logic = 3)
+Offset:              7.179ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3090,14 +3138,14 @@ Offset:              6.491ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            167   0.360   1.456  reset (reset)
+     FDS:C->Q            343   0.360   2.144  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.491ns (4.675ns logic, 1.816ns route)
-                                       (72.0% logic, 28.0% route)
+    Total                      7.179ns (4.675ns logic, 2.504ns route)
+                                       (65.1% logic, 34.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3120,14 +3168,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 64.49 secs
+Total REAL time to Xst completion: 68.00 secs
+Total CPU time to Xst completion: 67.98 secs
  
 --> 
 
-Total memory usage is 721532 kilobytes
+Total memory usage is 723456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  308 (   0 filtered)
+Number of warnings :  309 (   0 filtered)
 Number of infos    :  133 (   0 filtered)
 
