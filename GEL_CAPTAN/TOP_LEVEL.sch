@@ -310,6 +310,7 @@
         <signal name="ethernet_fifo_din(31:16)" />
         <signal name="ethernet_fifo_din(47:32)" />
         <signal name="ethernet_fifo_din(63:48)" />
+        <signal name="adc_overflow" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -1926,7 +1927,7 @@
             <blockpin signalname="fadc_data_in(15:0)" name="din(15:0)" />
             <blockpin signalname="XLXN_15533" name="wr_en" />
             <blockpin signalname="XLXN_15524" name="full" />
-            <blockpin signalname="XLXN_15525" name="overflow" />
+            <blockpin signalname="adc_overflow" name="overflow" />
             <blockpin signalname="MASTER_CLK" name="rd_clk" />
             <blockpin signalname="fadc_fifo_data_out(63:0)" name="dout(63:0)" />
             <blockpin signalname="XLXN_15529" name="rd_en" />
@@ -2062,6 +2063,10 @@
         </block>
         <block symbolname="vcc" name="XLXI_6368">
             <blockpin signalname="XLXN_15565" name="P" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6369">
+            <blockpin signalname="adc_overflow" name="I" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2770,9 +2775,6 @@
         <branch name="XLXN_15524">
             <wire x2="2336" y1="1088" y2="1088" x1="2304" />
         </branch>
-        <branch name="XLXN_15525">
-            <wire x2="2336" y1="1216" y2="1216" x1="2304" />
-        </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3184" y="864" type="branch" />
             <wire x2="3184" y1="864" y2="864" x1="3168" />
@@ -3105,6 +3107,16 @@
         </branch>
         <text style="fontsize:20;fontname:Arial" x="2848" y="2548">Ah, I am sure there is a much better way to do this, but I needed a quick way to do some pre-trigger sampliing.  This should delay the signal 3 clocks so that when the sample size is set to anything above 3, it willl give a decient look at the signal.  </text>
         <rect width="2524" x="2812" y="2500" height="1936" />
+        <instance x="2080" y="1392" name="XLXI_6369" orien="R0" />
+        <branch name="adc_overflow">
+            <wire x2="2064" y1="1296" y2="1360" x1="2064" />
+            <wire x2="2080" y1="1360" y2="1360" x1="2064" />
+            <wire x2="2096" y1="1296" y2="1296" x1="2064" />
+            <wire x2="2304" y1="1280" y2="1280" x1="2096" />
+            <wire x2="2096" y1="1280" y2="1296" x1="2096" />
+            <wire x2="2336" y1="1216" y2="1216" x1="2304" />
+            <wire x2="2304" y1="1216" y2="1280" x1="2304" />
+        </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

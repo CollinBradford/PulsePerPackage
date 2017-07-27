@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 07/27/2017 10:20:30
+-- /___/   /\     Timestamp : 07/27/2017 11:22:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -782,6 +782,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
    signal adc_data_in               : std_logic_vector (63 downto 0);
+   signal adc_overflow              : std_logic;
    signal b_data                    : std_logic_vector (63 downto 0);
    signal b_data_we                 : std_logic;
    signal b_enable                  : std_logic;
@@ -894,7 +895,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15484                : std_logic_vector (63 downto 0);
    signal XLXN_15518                : std_logic;
    signal XLXN_15524                : std_logic;
-   signal XLXN_15525                : std_logic;
    signal XLXN_15529                : std_logic;
    signal XLXN_15531                : std_logic;
    signal XLXN_15532                : std_logic;
@@ -2218,7 +2218,7 @@ begin
                 dout(63 downto 0)=>fadc_fifo_data_out(63 downto 0),
                 empty=>XLXN_15531,
                 full=>XLXN_15524,
-                overflow=>XLXN_15525,
+                overflow=>adc_overflow,
                 valid=>XLXN_15532);
    
    XLXI_6342 : VCC
@@ -2343,6 +2343,10 @@ begin
    
    XLXI_6368 : VCC
       port map (P=>XLXN_15565);
+   
+   XLXI_6369 : OBUF
+      port map (I=>adc_overflow,
+                O=>open);
    
 end BEHAVIORAL;
 
