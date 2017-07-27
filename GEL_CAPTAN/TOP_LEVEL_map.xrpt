@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Fri Jul 21 14:27:32 2017">
+  <application stringID="Map" timeStamp="Thu Jul 27 10:29:38 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Microsemi\Libero_v11.5\Model\win32acoem;C:\Microsemi\Libero_v11.5\Designer\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\OrCAD\OrCAD_16.0\tools\PSpice;C:\OrCAD\OrCAD_16.0\tools\PSpice\Library;C:\OrCAD\OrCAD_16.0\tools\Capture;C:\OrCAD\OrCAD_16.0\tools\bin;C:\OrCAD\OrCAD_16.0\tools\fet\bin;C:\Windows\System32\Windows System Resource Manager\bin;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MIT\Kerberos\bin;C:\Program Files (x86)\MIT\Kerberos\bin;C:\Program Files (x86)\PuTTY;C:\Aldec\Active-HDL-10.2\bin;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2\Scripts;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2\Library\bin"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Microsemi\Libero_v11.5\Model\win32acoem;C:\Microsemi\Libero_v11.5\Designer\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\OrCAD\OrCAD_16.0\tools\PSpice;C:\OrCAD\OrCAD_16.0\tools\PSpice\Library;C:\OrCAD\OrCAD_16.0\tools\Capture;C:\OrCAD\OrCAD_16.0\tools\bin;C:\OrCAD\OrCAD_16.0\tools\fet\bin;C:\Windows\System32\Windows System Resource Manager\bin;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MIT\Kerberos\bin;C:\Program Files (x86)\MIT\Kerberos\bin;C:\Program Files (x86)\PuTTY;C:\Aldec\Active-HDL-10.2\bin;C:\Program Files (x86)\PuTTY\;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2\Scripts;C:\Users\cbradfor\AppData\Local\Continuum\Anaconda2\Library\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -77,35 +77,35 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="123"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="650120"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="59 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="644320"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="1 mins 1 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="57 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING"/>
       <section label="Logic Utilization" stringID="MAP_LOGIC_UTILIZATION">
-        <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3561"/>
+        <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3821"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="1"/>
         <item dataType="int" stringID="MAP_NUM_ACAL_REG" value="0"/>
         <item dataType="int" stringID="MAP_AVAILABLE_SLICEL" value="5376"/>
         <item dataType="int" stringID="MAP_AVAILABLE_SLICEM" value="5376"/>
         <item dataType="int" stringID="MAP_FLOPS_PER_SLICE" value="2"/>
         <item dataType="int" stringID="MAP_LUTS_PER_SLICE" value="2"/>
-        <item AVAILABLE="5376" dataType="int" stringID="MAP_NUM_SLICEM" value="462"/>
-        <item AVAILABLE="5376" dataType="int" stringID="MAP_NUM_SLICEL" value="462"/>
-        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="5121"/>
+        <item AVAILABLE="5376" dataType="int" stringID="MAP_NUM_SLICEM" value="536"/>
+        <item AVAILABLE="5376" dataType="int" stringID="MAP_NUM_SLICEL" value="536"/>
+        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="5217"/>
         <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="296"/>
         <item dataType="int" stringID="MAP_NUM_ACAL_LUT" value="0"/>
       </section>
       <section label="Logic Distribution" stringID="MAP_LOGIC_DISTRIBUTION">
-        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="4228"/>
+        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="4539"/>
         <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
-        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="5417"/>
+        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="5513"/>
         <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="296"/>
         <item dataType="int" stringID="MAP_NUM_DP_RAM" value="384"/>
         <item dataType="int" stringID="MAP_NUM_RAM32" value="0"/>
         <item dataType="int" stringID="MAP_NUM_RAM16" value="0"/>
         <item dataType="int" stringID="MAP_NUM_ROM16" value="0"/>
-        <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="377"/>
+        <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="474"/>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <item AVAILABLE="112" dataType="int" stringID="MAP_NUM_LOWCAPIOB" value="0"/>
@@ -130,9 +130,9 @@
         <item AVAILABLE="32" dataType="int" stringID="MAP_BUFG_BUFGCTRL" value="11"/>
         <item dataType="int" label="Number used as BUFGs" stringID="MAP_NUM_BUFG" value="11"/>
         <item dataType="int" stringID="MAP_NUM_BUFGCTRL" value="0"/>
-        <item AVAILABLE="72" dataType="int" stringID="MAP_FIFO16_RAMB16" value="39"/>
+        <item AVAILABLE="72" dataType="int" stringID="MAP_FIFO16_RAMB16" value="47"/>
         <item dataType="int" stringID="MAP_NUM_FIFO16" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_RAMB16" value="39"/>
+        <item dataType="int" stringID="MAP_NUM_RAMB16" value="47"/>
         <item AVAILABLE="8" dataType="int" label="Number of DCM_ADVs" stringID="MAP_NUM_DCM_ADV" value="5"/>
         <item AVAILABLE="4" dataType="int" stringID="MAP_NUM_BSCAN" value="1"/>
         <item AVAILABLE="16" dataType="int" stringID="MAP_NUM_IDELAYCTRL" value="1"/>
