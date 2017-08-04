@@ -59,10 +59,10 @@ begin
 					state_new_peak <= '0';
 					b_data_we_sig <= '0';
 					count_delay <= count_delay + 1;
+					state_new_peak_over <= '0';--NOTE: I did have this in the next if statement, but I think moving it here will be fine and will allow for packets that are only 64 bits long.  
 					if(count_delay >= delay_time_u) then
 						count_delay <= (others => '0');
 						b_data_we_sig <= '1';
-						state_new_peak_over <= '0';
 					end if;
 				end if;
 				
